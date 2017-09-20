@@ -1,0 +1,186 @@
+﻿@charset "utf-8";
+
+.freelist li i.icon-audio,.videolist .free,.phblist li i{background:url(../images/icon.png) no-repeat;}
+
+.wrapper{background-color: transparent; position: relative; z-index: 9999;}
+.flo_lbox{width:140px;height: auto; overflow: hidden;position: absolute; left:0; z-index: 99;top:0;}
+.hottag{ background-color: #fff;}
+.hottag h2{height: 45px; line-height: 45px; text-align: center;font-size: 17px; font-weight: normal; color:#ff6000;}
+.hottag dl{font-size: 16px; height: auto; overflow: hidden;}
+.hottag dl dt{ height: 32px; line-height: 32px; padding-left: 48px; margin-bottom: 7px;background: url(../images/more.png) no-repeat;   }
+.hottag dl dt a:hover{display: block;height: 32px; line-height: 32px; border-right: 3px solid #ff6000;}
+.hottag dl dt.icon-cy{background-position:19px 4px;}
+.hottag dl dt.icon-zc{background-position:19px -35px;}
+.hottag dl dt.icon-xqs{background-position:19px -74px;}
+.hottag dl dd{height: 32px; line-height: 32px; padding-left: 48px; margin-bottom: 7px; }
+.hottag dl dd a:hover{display: block;height: 32px; line-height: 32px; border-right: 3px solid #ff6000;}
+
+.maincontent{padding-left: 160px; height: auto; min-height: 660px; overflow: hidden; margin-top: 10px;}
+/*--轮播--*/
+.hotslide{ width: 710px; height: 320px; float: left; position: relative;z-index: 1; margin-right: 20px;}
+.hotslide_w{ width: 615px; height: 320px; overflow: hidden; float: left;}
+.hotslide .hotpic{ width: 6000px; overflow: hidden;}
+.hotslide .hotpic{ width: 615px; height: 320px; float: left;}
+.hotslide .hotpic img{ width: 615px; height: 320px;}
+.hotslide .prev, .hotslide .next{ display: none; width: 60px; height: 60px; position: absolute; top: 50%; margin-top: -30px; text-indent: -9999px; z-index: 15; background:url(../images/publicico.png) no-repeat;}
+.hotslide .prev{ left: 0;}
+.hotslide .next{ background-position: 0 -140px; right: 0;}
+.hotslide .prev:hover{ background-position: 0 -70px;}
+.hotslide .next:hover{ background-position: 0 -210px;}
+.hotslide .pagination{ width:102px; height:320px; text-align:center; margin:0 auto; float: left; position: absolute;right: 0; top:0; z-index: 9;}
+.hotslide .pagination li{display:block;height:53px; width:95px; padding-left: 7px;}
+.hotslide .pagination a{ height:53px; width:100%;line-height: 53px; text-align: center;color:#fff;font-size: 17px;background-color:#75797c;display: block;}
+.hotslide .pagination li.current{ height: 55px; background: url(../images/bg20170407.png) 0 20px; background-repeat: no-repeat; }
+.hotslide .pagination .current a{background-color: #ff6f00;height: 55px;}
+
+
+.hotslide2{ width: 710px; height: 320px; float: left; position: relative;z-index: 1;margin-right: 20px;}
+.hotslide2 .hotslide_w{ width: 710px; height: 320px; overflow: hidden;}
+.hotslide2 .hotpic{ width: 6500px; overflow: hidden;}
+.hotslide2 .hotpic{ width: 710px; height: 320px; float: left;}
+.hotslide2 .hotpic img{ width: 710px; height: 320px;}
+.hotslide2 .prev, .hotslide2 .next{ display: none; width: 60px; height: 60px; position: absolute; top: 50%; margin-top: -30px; text-indent: -9999px; z-index: 15; background:url(../images/publicico.png) no-repeat;}
+.hotslide2 .prev{ left: 0;}
+.hotslide2 .next{ background-position: 0 -140px; right: 0;}
+.hotslide2 .prev:hover{ background-position: 0 -70px;}
+.hotslide2 .next:hover{ background-position: 0 -210px;}
+.hotslide2 .pagination{ width:100%; height:30px; text-align:center; margin:0 auto; position:absolute; z-index:9; bottom:5px;}
+.hotslide2 .pagination li{ display:inline-block;*display:inline;*height:11px; *width:11px;}
+.hotslide2 .pagination a{ background:url(../images/public_ico.png) no-repeat 0 -99px; height:11px; width:11px; display:inline-block;	margin:0 4px; text-indent:-9999px;}
+.hotslide2 .pagination li.current{}
+.hotslide2 .pagination .current a{ background:url(../images/public_ico.png) no-repeat 0 -120px;}
+
+
+.freeRecommend{ width: 290px; float: left;height: 320px; background-color: #fff;  position: relative;}
+.freeRecommend h2{ line-height: 40px; font-size: 18px; color:#fb671f; font-weight:normal;padding:10px 20px 0 20px;}
+.freeRecommend h2 span{float: right;font-size: 12px; cursor: pointer; *margin-top: -40px;}
+.freelist{}
+.freelist li{ height: 44px; line-height: 44px; overflow: hidden;}
+.freelist li i.icon-audio{float: left; width: 22px;height: 22px; overflow: hidden; background-position: 0 -261px; margin-top:13px; margin-right:15px; cursor: pointer;}
+.freelist li h3{ float:left;height: 46px; line-height: 46px; display: inline-block; color:#333;font-weight: normal;cursor: pointer; font-size: 14px;}
+.freelist li .tiem{float:right;height: 46px; line-height:46px;color:#999;}
+.freelist li a:hover{}
+.freelist li a:hover i.icon-audio{background-position: 0 -301px;}
+.freelist li a:hover h3{ color:#ff7202;}
+.freelist li a:hover .time{color:#fff; }
+.free-more{line-height: 30px; text-align: center; position: absolute; left:0; bottom:15px; width: 100%;}
+.free-more a{color:#fb671f; font-size: 14px;}
+.freeRecommend .phblist{padding-top: 0!important;}
+.freeRecommend .phblist li{ padding-top: 0!important; padding-bottom: 4px!important;}
+.freeRecommend .phblist li i{top:13px!important;}
+
+
+.audiospecial{ padding: 20px 0 0 0; height: auto; overflow: hidden; width: 100%;}
+.audiospecial h2{line-height: 37px; height: 37px; font-size: 17px; font-weight: normal;}
+.audiospecial h2 a{color:#333;}
+.audiospecial h2 a span{font-size: 12px; margin-left: 6px; color:#fa681f;}
+.audiospecial_c{ width: 1040px; position: relative; overflow: hidden;}
+/*.audiospeciallist{ width: 10000px; position: absolute; top:0; left: 0; z-index: 2;}*/
+.audiospeciallist li{width: 500px; overflow: hidden; height:192px;float: left;background-color: #fff; margin-right: 20px;margin-bottom: 10px;}
+.audiospeciallist li img{ width:156px; height: 192px; overflow: hidden;float: left;}
+.audiospeciallist li dl{ width: 322px; height:167px; overflow: hidden; float: left; padding-left: 12px; padding-top: 25px; }
+.audiospeciallist li dl dt{ height: 28px; line-height: 28px; overflow: hidden; font-size: 16px;}
+.audiospeciallist li dl dt a{}
+.audiospeciallist li dl dd{height: 24px; line-height: 24px; font-size: 12px; color:#999;}
+.audiospeciallist li dl dd.p-b20{padding-bottom: 20px;}
+.audiospeciallist li dl dd span{ margin-left: 25px; color:#fb6822;}
+.audiospeciallist li .audiospecial-price{font-size: 18px;color: #fb6720;float: right;}
+.audiospeciallist .read{font-size: 14px;border-radius: 20px;}
+.audiospeciallist .readed{padding:0 12px 0 26px;background: url(../images/icon-readed.png) #fdf6dd no-repeat 9px center;color: #999;float: right;line-height: 25px;height: 25px;}
+.audiospeciallist .unread{padding:0 16px 0 24px;background: url(../images/icon-unread.png) #fff no-repeat 10px center;border: 1px solid #fb6720;color: #fb6720;float: right;line-height: 23px;height: 23px;*margin-top:-30px;}
+.audiospecial_c .prev{ width: 20px; height: 50px; overflow: hidden; display: block; position: absolute; left:0; top:50%; margin-top: -25px; z-index: 5; background: url(../images/l.png) no-repeat;}
+.audiospecial_c .next{ width: 20px; height: 50px; overflow: hidden; display: block; position: absolute; right:0; top:50%; margin-top: -25px; z-index: 5;background: url(../images/r.png) no-repeat;}
+
+.selected{ padding: 20px 0 0 0; height: auto; overflow: hidden; width: 100%;}
+.selected h2{line-height: 37px; height: 37px; font-size: 17px; font-weight: normal;}
+.selected h2 a{color:#333;}
+.selected h2 a span{font-size: 12px; margin-left: 6px; color:#fa681f;}
+.selected_c{width: 100%; height: auto; overflow: hidden;}
+
+.selectedlist{margin:0 -10px 0; width: 1060px; position: relative; height: auto;overflow: hidden;}
+.selectedlist li{width: 510px; height: 117px; overflow: hidden; float: left;background-color: #fff; margin:0 10px 10px;}
+.selectedlist li .s-img{width: 156px; height: 117px; overflow: hidden;position: relative; margin-right: 20px;float: left}
+.selectedlist li .s-img img{ width: 156px; height: 117px; overflow: hidden;}
+.selectedlist li .s-img span{ position: absolute;right: 0; top:10px; z-index: 2; display: inline-block; width: 40px; height: 20px; line-height: 20px; text-align: center; color:#fff; background-color: rgba(0,0,0,0.8);border-radius: 20px 0 0 20px;font-size: 12px;}
+.selectedlist li .s-info{ width: 316px; float: left;padding-top: 12px; position: relative;}
+.selectedlist li .s-info h3{height: 27px; line-height: 27px; font-weight: normal;font-size: 18px; width: 270px; overflow: hidden;}
+.selectedlist li .s-info .s-price{ position: absolute;right: 0; top:12px; z-index: 2;height: 27px; line-height: 27px; display: inline-block;font-size: 16px; color:#ff6000;}
+.selectedlist li .s-info .s-p1{height: 20px; line-height: 20px;font-size: 12px; overflow: hidden; color:#999;}
+.selectedlist li .s-info .s-tag{ margin-top: 8px;height: 19px;}
+.selectedlist li .s-info .s-tag span{ float: left;height: 17px; line-height: 17px;font-size: 12px; overflow: hidden; color:#ff6000; padding:0 4px; border: 1px solid #ff6000; margin-right: 4px;}
+.selectedlist li .s-info span a{color:#ff6000;height: 17px; line-height: 17px;display: inline-block; }
+.selectedlist li .s-info .s-p2{height: 22px; line-height: 22px;font-size: 12px; overflow: hidden; color:#666;}
+.selectedlist li .s-info .s-p2 span{float: right; color:#999;}
+
+
+.hotvideo{ padding: 10px 0 0 0; height: auto; overflow: hidden; width: 100%;}
+.hotvideo h2{line-height: 37px; height: 37px; font-size: 17px; font-weight: normal;}
+.hotvideo h2 a{color:#333;}
+.hotvideo h2 a span{font-size: 12px; margin-left: 6px; color:#fa681f;}
+.hotvideo_c{width: 100%; height: auto; overflow: hidden; position: relative;}
+.videolist{ height:auto; overflow:hidden;position:relative;width: 1060px; margin-left: -20px;}
+.videolist li{ width:245px; overflow:hidden; float:left; position:relative; height:auto; margin-left:20px; display:inline; height: 290px; background-color: #fff;}
+.videolist .img{ width:245px; height:184px; display: block; overflow:hidden; position: relative;}
+.videolist .img img{ width:100%; height: 100%; display: block; position: absolute; top: 0; left: 0;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;}
+.videolist .img:hover img{
+	-moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.videolist h3{ font-size:16px; height:38px; overflow:hidden; line-height:38px; font-weight:normal; margin:6px 0 0; padding:0 12px;}
+.videolist h3 a{ color:#000; text-decoration:none !important;}
+.videolist h3 a:hover{ color: #f60;}
+.videolist .clist_ico{padding:0 12px; height: 26px;line-height: 26px;}
+.videolist .status{ height: 18px; line-height: 18px; margin-top: 8px; padding-left: 12px;}
+.videolist .price{ color: #f60; font-size: 12px;}
+.videolist .price em{ font-style:normal; font-size:14px; margin-left: 2px;}
+.videolist .originalprice{ margin-left: 5px; color:#999; text-decoration:line-through;}
+.videolist .free{ width: 36px; height:18px; line-height: 18px; text-align: center; color:#fff; display: inline-block; font-size: 12px; background-position: 0 -173px;}
+.videolist .diamond{ background:url(../images/icon.png) no-repeat 0 -100px; color: #f60; font-size: 13px; padding-left: 20px;}
+
+.payvideo{ padding: 10px 0 0 0; height: auto; overflow: hidden; width: 710px; margin-right: 20px; float: left;}
+.payvideo h2{line-height: 37px; height: 37px; font-size: 17px; font-weight: normal;}
+.payvideo h2 a{color:#333;}
+.payvideo h2 a span{font-size: 12px; margin-left: 6px; color:#fa681f;}
+.payvideo_c{width: 100%; height: auto; overflow: hidden; position: relative;}
+.videolist_w223{width: auto;}
+.videolist_w223 li{ width: 223px; height: 275px; margin-bottom: 20px;}
+.videolist_w223 li .img{width: 223px; height: 165px;}
+.videolist_w223 .clist_ico .zx_n3{margin-right: 0;}
+.videolist_w223 .clist_ico .zx_n1,.videolist_w223  .clist_ico .zx_n2,.videolist_w223  .clist_ico .zx_n3{margin-right: 6px;}
+
+.phb{ width: 310px; float: left;padding: 10px 0 20px 0;height: auto; overflow: hidden;}
+.phb h2{line-height: 37px; height: 37px; font-size: 17px; font-weight: normal;}
+.phb h2 a{color:#333;}
+.phb h2 a span{font-size: 12px; margin-left: 6px; color:#fa681f;}
+.phb .phb_c{height: 570px; overflow: hidden; width: 100%; background-color: #fff;}
+.phb .phb_c .phbtitle{ height: 48px; border-bottom: 1px solid #ebebeb;}
+.phb .phb_c .phbtitle li{ display: inline-block;float: left; width: 33%; text-align: center; font-size: 16px; cursor: pointer;}
+.phb .phb_c .phbtitle li span{padding:13px 2px 12px 2px; display: inline-block;}
+.phb .phb_c .phbtitle li.on{}
+.phb .phb_c .phbtitle li.on span{ color:#fb671f; padding:13px 2px 12px 2px; display: inline-block; border-bottom: 2px solid #fb671f;}
+.phb .phb_c .phbbox{ display: none;}
+.phblist{ padding: 10px 0 0 0;}
+.phblist li{ height: 48px; overflow: hidden; padding:7px 12px 0 53px; position: relative;}
+.phblist li i{width: 22px; height: 22px; display: inline-block; position: absolute; left:15px; top:20px;}
+.phblist li i.icon-audio{background-position: 0 -345px; }
+.phblist li i.icon-video{background-position: 5px -216px; }
+.phblist li h3{ height: 25px; line-height: 25px; overflow: hidden; font-weight: normal; font-size: 14px;}
+.phblist li h3 span{padding:0 6px; line-height: 18px; height: 18px; display: inline-block; border:1px solid #ff7000; border-radius: 18px 18px 18px 18px; font-size: 12px; margin-left:8px;}
+.phblist li h3 span.phb1{ color: #ff7000;}
+.phblist li h3 span.phb2{color: #7cd018; border-color:#7cd018;}
+.phblist li p{height: 23px; line-height: 23px; overflow: hidden;font-size: 12px; color:#999;}
+.phblist li p span{float: right;}
+.phbbox .phbmore{ margin-top:12px; font-size: 14px; text-align: center;width: 100%; display: none;}
+.phbbox .phbmore a{color: #ff7000;}
+/*------------- 友情链接 -------------*/
+.links{ margin: 20px auto; clear:both; height:44px; line-height:44px; position:relative; background-color: #fff;}
+.links p{ color:#999; height:44px; overflow:hidden; padding: 0 66px 0 88px; position: relative;}
+.links p a{color:#666; margin:0 10px 0 8px;}
+.links p a:hover{ color:#ff6600;}
+.links .lktitle{ color:#333; font-weight: normal; text-align: center; position:absolute; top:0; left:0; display:inline-block; width:88px;}
+.links .morelink{ position:absolute; top:0; right:0; display:inline-block; width:66px;}
+.links .morelink a{ color:#7f7f7f;}
+.links .morelink a:hover{ color:#ff6600;}

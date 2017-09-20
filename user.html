@@ -1,0 +1,682 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>会员中心 - 优米网 - 创业的人都在这里</title>
+<link media="all" type="text/css" rel="stylesheet" href="css/vpublic_c20140113.css"/>
+<link media="all" type="text/css" rel="stylesheet" href="css/home20140113.css"/>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/home20140113.js"></script>
+<script type="text/javascript" src="js/easing-1.3.pack.js"></script>
+<script type="text/javascript" src="js/user.js"></script>
+</head>
+<body>
+<link media="all" type="text/css" rel="stylesheet" href="css/vheader.css">
+<!--[if IE 6]> 
+<style type="text/css">
+#header{top:expression(offsetParent.scrollTop);}
+.dcodeico{top:expression(offsetParent.scrollTop);}
+</style>
+<script src="js/dd_belatedpng.js" mce_src="DD_belatedPNG.js"></script>   
+<script type="text/javascript">  
+DD_belatedPNG.fix('.quick_menu .khdtitle a,.vheader .kcfltitle .kcfla,.psrch .txt_srch, .psrch .btn_srch,.person .ps_name a, .person .ps_notice .number_l, .person .ps_notice .number_r,.dl_weibo, .dl_qq, .dl_renren,.nav_main .searchbox .searchbtn, .quick_menu li,.clist_ico .zx_n1, .clist_ico .zx_n2, .clist_ico .zx_n3');
+</script>
+<![endif]-->
+<link media="all" type="text/css" rel="stylesheet" href="css/autocomplete3.css"/>
+<script type="text/javascript" src="js/autocomplete3.js"></script>
+<script>
+$(function(){
+      $.ajaxSetup({cache:true});
+             $('#searchField1').click(function(){
+                 setAutoComplete("searchField1", "results_ul_7", "http://api.v.umiwi.com/api5/suggest/?q=","search_form1");
+      });
+});
+</script>
+<div id="header" class="vheader">
+    <div class="wrapper">
+        <a class="logo" href="/index.html"></a>
+        <ul trace="全站|顶部导航" class="quick_menu">
+            <li class="first"><a target="_self" href="http://www.youmi.cn/" title="首页">首页</a></li>
+            <li><a target="_self" href="http://v.youmi.cn/course/?click=1082" title="课程">课程</a></li>
+            <li><a target="_self" href="http://v.youmi.cn/zhuanti3/list?click=1084" title="专题">专题</a></li>
+            <li><a target="_self" href="http://v.youmi.cn/coin/?click=1087" title="积分商城">积分商城</a></li>
+            <li><a target="_self" href="http://ka.youmi.cn/?click=1088" title="开通会员卡">开通会员卡</a></li>
+            <li><a class="hightlight" target="_self" href="http://www.youmi.cn/zhaoshang/" title="代理招商">代理招商</a></li>
+            <li class="khdtitle">
+                <a target="_self" href="http://m.youmi.cn/" title="客户端">客户端</a>
+            	<span class="dcodeico"></span>    
+                <script type="text/javascript">
+		$(function(){
+		    var dcTimer;
+		    $('.khdtitle a').hover(function(){
+			clearTimeout(dcTimer);
+			$(".dcodeico").show();
+			},function(){
+			    dcTimer=setTimeout(function(){$(".dcodeico").hide();},400);
+			});
+			$('.dcodeico').hover(function(){
+			    clearTimeout(dcTimer);
+			},function(){
+			    $(this).hide();
+			});
+		    })
+		</script>
+            </li>
+            <li class="diamond last"><a target="_self" href="http://v.youmi.cn/member/diamond?click=1089" title="钻石会员"><img src="picture/v23.gif" alt="vip" width="18" height="18">钻石会员</a></li>
+            <li class="hotline hide">客服热线：010-85801860</li>
+        </ul>
+
+        <div class="flo_r"> 
+            <div class="icocheck" id="icocheck" style="display:none;cursor: pointer;"><a></a></div>
+            <ul id="login2" class="loginfo" style="display:none;">
+               <li class="first">你好,欢迎来到优米网!&nbsp;请</li>
+               <li><a href="javascript:void(0);" class="denglu">登录</a></li>
+               <li><a href="javascript:register()" target="_self" traceclick='1232'>注册</a></li>
+            </ul>
+            <ul class="person" id="loggedin2">
+    	        <li class="ps_notice">
+                    <span class="number" style="display:none;"><span class="number_l"></span><span class="number_c"><a href="" target="_blank"></a></span><span class="number_r"></span></span>
+                    <div id="notice_tipbox" class="notice_tipbox" style="display:none;">
+                    	<a class="btn_close" href="javascript:;" title="关闭"></a>
+                        <ul>
+                            <li>1条新通知，<a href="http://v.youmi.cn/home/mynotice/?click=147"  target="_blank">查看通知</a></li>
+                            <li>3条新私信，<a href="http://v.umiwi.com/home/mymessage/"  target="_blank">查看私信</a></li>
+                        </ul>
+                    </div>
+                </li>
+    	        <li class="ps_name">
+                    <span class="login_name"></span>
+                    <ul class="ps_list">
+                        <li><a target="_blank" href="http://v.youmi.cn/home/mycourse/?coursetype=buy">我的课程</a></li>  
+                        <li><a target="_blank" href="http://v.youmi.cn/home/mymessage/?click=597">我的私信</a></li>  
+                        <li id="nt_record2"><a target="_blank" href="http://v.youmi.cn/member/watchlog/">播放记录</a></li>
+                        <li><a target="_blank" href="http://v.youmi.cn/home/myfavcourse/">我的收藏</a></li>
+                        <li><a target="_blank" href="http://v.youmi.cn/member/mynotes/">我的笔记</a></li>
+                        <li><a target="_blank" href="http://v.youmi.cn/home/myorder/">我的订单</a></li>
+                        <li id="nt_carts"><a target="_blank" href="http://v.youmi.cn/carts/">购物车</a></li>
+                        <li><a href="http://v.youmi.cn/home/mynotice/?click=147" id="nt_total" >通知</a></li>
+                        <li><a href="http://mili.youmi.cn/setting/" target="_blank">设置</a></li>
+                        <li><a href="javascript:logout();" target="_self">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 打卡弹出层 S -->
+            <style type="text/css">
+            .popupBox{ width:478px; position:absolute; left:50%; margin-left:-240px; top:100px; border:1px solid #2B9617; border-top-width:5px; height:auto; overflow:hidden; background-color:#fff; z-index:9999998; padding:25px 0;}
+            .popupBox .popupBox_close{background:url(images/diamond.png) no-repeat -51px -1144px; width:17px; height:17px; overflow:hidden; position:absolute; right:6px; top:6px; cursor:pointer;}
+            .popupBox .signsuccess{ height:auto; overflow:hidden; padding:10px 0 20px;}
+            .popupBox .signsuccess h3{ height:38px; line-height:38px; text-align:center; font-size:14px; font-weight:normal;}
+            .popupBox .signsuccess h3 strong{}
+            .popupBox .signsuccess h3 span{ color:#FF6600; font-weight:bold;}
+            .popupBox .signsuccess p{ color:#666;height:38px; line-height:38px; text-align:center; font-size:14px;}
+            .popupBox .signsuccess p span{color:#FF6600; font-weight:bold;}
+            .popupBox .signsuccess p a{color:#FF6600; text-decoration:underline;}
+            .popupBox .signsuccess p a:hover{ text-decoration:none;}
+            </style>
+            <div class="popupBox" style="display:none;">
+                    <div class="popupBox_close" onclick="$('.popupBox').hide();"></div>
+                    <div class="signsuccess"><h3>亲爱的<strong>小米粒</strong>，你已签到成功，获得<span class="addcoinnum">10</span>积分。</h3><p>你的账户中共有<span class="mycoinnum">320</span>积分，明天再来，可以领到<span class="nextcoinnum">15</span>积分。<a href="http://v.youmi.cn/coin/" target="_blank">去兑换礼品</a></p></div>
+            </div>
+            <!-- 打卡弹出层 E -->
+
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="headbox">
+        <div class="wrapper">
+            <div class="dlbox">
+                 <div class="dlinfo">
+                     <span class="dl_c">
+                         <input type="text" class="txt_id" value="用户名/邮箱/手机号" id="login_username2" onfocus="initlogin();"/>
+                         <input style="display:none;" type="password" class="txt_psw" value="" id="login_password2" onfocus="initlogin();" onkeydown="if (event.keyCode==13) indexlogin(2);"/>
+                         <input type="text" class="txt_psw" value="密码" id="login_password_text2"/>                     
+</span>
+                     <input type="submit" class="dlbtn" value="登录" onclick="indexlogin(2);"/>
+                 </div>
+                 <p>
+                     <span class="dltip" id="wrong_tip2">账户名或密码错误，请重试！</span>
+                     <label><input type="checkbox" checked class="dlcheck" id="login_expire2" value="315360000"/>下次自动登录</label>
+                    <a href="http://passport.youmi.cn/retrieve/" target="_blank" class="highlight">忘记密码？</a>
+                 </p>           
+            </div>
+            <p class="dlthird">
+                 <span>使用其他账号登录：</span>
+                 <a href="javascript:void(0)" onclick="oauthLogin(2)" title="微博登录" class="dl_weibo">微博登录</a>
+                 <a href="javascript:void(0)" onclick="oauthLogin(4)" title="QQ登录" class="dl_qq">QQ登录</a>
+                 <a href="javascript:void(0)" onclick="oauthLogin(1)" title="人人登录" class="dl_renren">人人登录</a>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 浮动搜索 S -->
+    <div class="hdsearch">
+	<div class="wrapper">
+	    <div class="hdlogo"><a href="http://www.youmi.cn/" title="优米网" target="_self"></a></div>
+            <form action="http://v.youmi.cn/search/result" id="search_form1">
+		<div class="searchbox">
+			<input type="text" class="searchtext" value="请输入要查找的内容" name="q" id="searchField1" autocomplete="off">
+			<input type="hidden" name="click" value="608">
+			<input type="submit" class="searchbtn" value="">
+			<div class="schwords">
+			        <a href="http://v.youmi.cn/search/result/?q=%E6%8A%95%E8%B5%84&click=1079" title="投资">投资</a>
+    <a href="http://v.youmi.cn/search/result/?q=%E5%BE%AE%E4%BF%A1&click=1080" title="微信">微信</a>
+    <a href="http://v.youmi.cn/search/result/?q=O2O&click=1081" title="O2O">O2O</a>
+
+			</div> 
+		</div>
+		</form>
+	</div>
+    </div>
+    <!-- 浮动搜索 E -->
+    <script>
+    var defaultvalue = "请输入要查找的内容";
+    
+    $('#searchField1').focus(function(){
+        if($(this).val() == defaultvalue){
+            $(this).val("");
+        }
+        $('.schwords').hide();
+    })
+    
+    $('#searchField1').blur(function(){
+        if($(this).val() == ""){
+            $(this).val(defaultvalue);
+        }
+        $('.schwords').show();
+    })
+    </script>
+
+</div>
+<script>
+$(window).scroll(function(){
+    var sclT = $(document).scrollTop();   
+    var vheaderT = $('.vheader').height();
+    
+    if(sclT > vheaderT){
+    	$(".vheader .logo").hide();
+        $(".vheader .hdsearch").slideDown(300);
+    }else{
+    	$(".vheader .logo").show();
+        $(".vheader .hdsearch").slideUp(300);
+    }
+});
+</script>
+<script type="text/javascript" src="js/signin2014.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/nav_common.js"></script>
+<script type="text/javascript" src="js/noticev_util.js"></script>
+<script defer>noticeUtil.get();
+noticeUtil.Interval = setInterval('noticeUtil.get()', 3000);
+</script>
+
+<div class="w_950">
+  <div class="w_950_c">
+
+  <div class="w_230">
+      <div class="pInfo">
+        <div class="avatar"><img src="picture/7693510b.jpg" /><div class="avatar_bg"></div></div>
+        <div class="name"><strong></strong>
+        	    </div>
+      <div class="l_jf"><a href="/home/coinexchange" target="_blank">积分：<span class="orange">20</span></a><span class="l_jf_help"><a href="http://www.youmi.cn/help/questionanswer.shtml#md23" target="_blank"></a></span></div>
+                <span class="pSet"><a href="http://mili.youmi.cn/setting/base/" target="_blank">个人设置</a></span>
+        <span class="plink"><a href="http://v.youmi.cn/profile/" target="_blank">主页</a></span>
+      </div>
+      <em class="l_jf_help_ts">如何获得积分？</em>
+      <script type="text/javascript">
+        $(".l_jf_help").hover(function(){
+        var w230=$(".w_230").offset();
+        var w230_X=w230.left;
+        var help=$(".l_jf_help").offset();
+        var help_X=help.left;
+        var ts_X=help_X-w230_X;
+        $(".l_jf_help_ts").css({left:ts_X+"px"}).show();
+        },function(){
+        $(".l_jf_help_ts").hide();
+        });
+      </script>
+      <h2  class="on"><a href="/home/"><em class="wdsy"></em>我的首页<div class="bg"></div></a></h2>
+      <dl>
+        <dt><a href="/home/myfavcourse/"><em class="wdxx"></em>我的学习<div class="bg"></div></a></dt>   
+        <dd class="ico_weekly"><a href="/home/weekreport/">学习周报<div class="bg"></div></a><i></i></dd>
+        <dd ><a href="/home/myfavcourse/">我的收藏<div class="bg"></div></a></dd>
+        <dd ><a href="/home/mycourse/">我的课程<div class="bg"></div></a></dd>
+        <dd ><a href="/home/watchlog/">学习记录<div class="bg"></div></a></dd>
+        <dd ><a href="/home/signin/">签到记录<div class="bg"></div></a></dd>
+        <dd ><a href="/home/sharecourse/">送课记录<div class="bg"></div></a></dd>
+		<dd ><a href="/home/mynotes/">我的笔记<div class="bg"></div></a></dd>
+		<dd ><a href="/home/mydiscuss/">我的讨论<div class="bg"></div></a></dd>
+		<dd ><a href="/home/myactive/">我的活动<div class="bg"></div></a></dd>
+		<!--<dd ><a href="/home/mywish/">我的许愿单<div class="bg"></div></a></dd>-->
+      </dl>
+
+      
+
+     <dl>
+        <dt><a href="/home/myorder/"><em class="ddgl"></em>订单管理<div class="bg"></div></a></dt>
+        <dd ><a href="/home/myorder/">我的订单<div class="bg"></div></a></dd>
+        <dd ><a href="/home/myordersucc/">我的购买记录<div class="bg"></div></a></dd>
+        <dd ><a href="/home/mycoupon/">我的优惠券<div class="bg"></div></a></dd>
+        <dd ><a href="/home/mypcode/">我的兑换码<div class="bg"></div></a></dd>
+        <dd ><a href="/home/mycharge/">账户余额<div class="bg"></div></a></dd>
+        <dd ><a href="/home/myalipay/">账户充值<div class="bg"></div></a></dd>
+        <dd ><a href="/home/coinexchange/">我的积分<div class="bg"></div></a></dd>
+      </dl>
+
+
+      <dl>
+        <dt><a href="/home/mymessage/"><em class="tz"></em>优米圈<div class="bg"></div></a></dt>
+        <dd ><a href="/home/mymessage/">我的私信<div class="bg"></div></a></dd>
+        <dd ><a href="/home/mynotice/">我的通知<div class="bg"></div></a></dd>
+        <dd ><a href="/home/myfollow">我的关注<div class="bg"></div></a></dd>
+        <dd ><a href="/home/myfans">我的粉丝<div class="bg"></div></a></dd>
+		<dd ><a href="javascript:void(0)" onclick="inviteurl()">我的邀请链接<div class="bg"></div></a></dd>
+		<script type="text/javascript" src="js/msg_util.js"></script>
+		<script>
+		function inviteurl()
+		{
+			MsgUtil.show('您的邀请链接如下，请全部选中，按右键复制：<br><input size=50 value="http://passport.youmi.cn/register/inviter?id=7693510"><br>',function(){},0);
+		}
+		</script>
+      </dl>
+
+    		 <dl>
+			<dt><a href="/home/openuser/" class="cja"><em class="cj"></em>申请成为讲师<div class="bg"></div></a>  </span></dt>
+		  </dl>
+	        <dl>
+
+  </div>
+  <div class="w_720">
+
+   <div class="messagewrap">
+
+<div class="messagebox">
+    	<ul>
+        	            	<li>
+                    <i class="i_icon"></i><p>完善用户名，<br />可以获取积分哦！</p>
+                    <a href="http://mili.youmi.cn/setting/password/" class="m_link" target="_blank" alt="完善用户名">去完善用户名&gt;&gt;</a>
+                    <em class="messageclose"></em>
+                </li>
+                        <li>
+            	<i class="i_icon"></i><p>您有<strong>20个</strong>可兑换积分。</p>
+                <a href="/coin/" class="m_link" target="_blank"  alt="完善用户名">去积分商城&gt;&gt;</a>
+            	<em class="messageclose"></em>
+            </li>
+                        <li>
+            	<i class="new_icon"></i><p><span>[新课上线]</span>物联网核心是“联”</p>
+                <a href="/mayunwulianwang.shtml" class="m_link" target="_blank" alt="2017世界物联网博览会马云演讲">马上看>></a>
+            	<em class="messageclose"></em>
+            </li>
+                            <li>
+                    <i class="shf_icon"></i><p>每月<strong class="highlight">1</strong>次分享权，<br>送付费课程给三位好友。</p>
+                    <a href="/home/sharecourse/" class="m_link" target="_blank" alt="送课程">马上看&gt;&gt;</a>
+                    <em class="messageclose" style="display: none;"></em>
+                </li>
+                    </ul>
+    
+    	<a href="javascript:void(0)" class="messagedown"></a>
+    	<a href="javascript:void(0)" class="messageup" style="display:none;"></a>
+        <div class="messagebox_no" style="display:none;"><span></span></div>
+    </div>
+</div>    
+<div class="line_bg"></div>
+
+          
+
+
+<div class="myinterested">
+		<div class="course_categories"><strong>分类：</strong>
+		<p><a href="/home/mycourse/?catid=1136&coursetype=all">要不要创业</a>|
+		<a href="/home/mycourse/?catid=1001&coursetype=all">创业第一步</a>|
+		<a href="/home/mycourse/?catid=1135&coursetype=all">创业前三年</a>|
+		<a href="/home/mycourse/?catid=1005&coursetype=all">创业突破期</a>|
+		<a href="/home/mycourse/?catid=1002&coursetype=all">创业新趋势</a>
+				</p>
+		</div>
+        <ul class="c_list">
+                       <!--  <li >
+                <a href="/mayunwulianwang.shtml?go=1" class="img" title="2017世界物联网博览会马云演讲" target="_blank">
+                    <img src="picture/13064_190x14209110840.jpg" alt="2017世界物联网博览会马云演讲">
+                    <h3>2017世界物联网博览会马云演讲</h3>
+                </a>
+                <p>讲师：<strong class="name"><a title="马云" href="/mayunwulianwang.shtml?go=1" target="_blank">马云</a></strong> <i class="ico_picnew"></i></p>
+                <p>
+                	<span>阿里巴巴集团董事局主席     </span>
+                </p>
+
+                <div class="c_info">
+				         <div class="flo_l" id="a13064">
+				                  <span class="finish" style="display:none">已学完</span></p>
+				                  <a class="study" href="/mayunwulianwang.shtml?go=1" title="马上看" style="display:none;" target="_blank">马上看</a>
+
+				                  <div class="progress" style="display: none;">
+				                          <div class="progress_l"></div>
+				                          <div style="width:2px;" class="progress_c"></div>
+				                          <div class="progress_r"></div>
+				                  </div>
+				                  <span class="progress_info" style="display: none;">观看至10%</span>
+				         </div>
+				         <div class="flo_r">
+				                 <em class="icon_a" title="观看人数">23</em>|<em title="讨论人数" class="icon_b"  qid=0>0</em>
+				         </div>
+ 				</div>
+
+            </li>
+
+                      <li >
+                <a href="/xianfengrenwuwanglifen.shtml?go=1" class="img" title="王利芬：横跨传媒与商界的女王" target="_blank">
+                    <img src="picture/13054_190x14209100856.jpg" alt="王利芬：横跨传媒与商界的女王">
+                    <h3>王利芬：横跨传媒与商界的女王</h3>
+                </a>
+                <p>讲师：<strong class="name"><a title="王利芬" href="/xianfengrenwuwanglifen.shtml?go=1" target="_blank">王利芬</a></strong> <i class="ico_picnew"></i></p>
+                <p>
+                	<span>优米创始人&amp;总裁           </span>
+                </p>
+
+                <div class="c_info">
+				         <div class="flo_l" id="a13054">
+				                  <span class="finish" style="display:none">已学完</span></p>
+				                  <a class="study" href="/xianfengrenwuwanglifen.shtml?go=1" title="马上看" style="display:none;" target="_blank">马上看</a>
+
+				                  <div class="progress" style="display: none;">
+				                          <div class="progress_l"></div>
+				                          <div style="width:2px;" class="progress_c"></div>
+				                          <div class="progress_r"></div>
+				                  </div>
+				                  <span class="progress_info" style="display: none;">观看至10%</span>
+				         </div>
+				         <div class="flo_r">
+				                 <em class="icon_a" title="观看人数">639</em>|<em title="讨论人数" class="icon_b"  qid=742379>1</em>
+				         </div>
+ 				</div>
+
+            </li>
+
+                      <li >
+                <a href="/yuminhongsanwenyu.shtml?go=1" class="img" title="俞敏洪：像三文鱼一样活出生命动感" target="_blank">
+                    <img src="picture/13052_190x14209100846.jpg" alt="俞敏洪：像三文鱼一样活出生命动感">
+                    <h3>俞敏洪：像三文鱼一样活出生命动感</h3>
+                </a>
+                <p>讲师：<strong class="name"><a title="俞敏洪" href="/yuminhongsanwenyu.shtml?go=1" target="_blank">俞敏洪</a></strong> <i class="ico_picnew"></i></p>
+                <p>
+                	<span>新东方教育科技集团创始人 </span>
+                </p>
+
+                <div class="c_info">
+				         <div class="flo_l" id="a13052">
+				                  <span class="finish" style="display:none">已学完</span></p>
+				                  <a class="study" href="/yuminhongsanwenyu.shtml?go=1" title="马上看" style="display:none;" target="_blank">马上看</a>
+
+				                  <div class="progress" style="display: none;">
+				                          <div class="progress_l"></div>
+				                          <div style="width:2px;" class="progress_c"></div>
+				                          <div class="progress_r"></div>
+				                  </div>
+				                  <span class="progress_info" style="display: none;">观看至10%</span>
+				         </div>
+				         <div class="flo_r">
+				                 <em class="icon_a" title="观看人数">294</em>|<em title="讨论人数" class="icon_b"  qid=0>0</em>
+				         </div>
+ 				</div>
+
+            </li>
+
+                      <li >
+                <a href="/mayunxuanchuanpian.shtml?go=1" class="img" title="七分钟回顾，马云创办阿里的六个重要节点" target="_blank">
+                    <img src="picture/13048_190x14209101003.jpg" alt="七分钟回顾，马云创办阿里的六个重要节点">
+                    <h3>七分钟回顾，马云创办阿里的六个重要节点</h3>
+                </a>
+                <p>讲师：<strong class="name"><a title="优米" href="/mayunxuanchuanpian.shtml?go=1" target="_blank">优米</a></strong> <i class="ico_picnew"></i></p>
+                <p>
+                	<span>优米音频工作室  </span>
+                </p>
+
+                <div class="c_info">
+				         <div class="flo_l" id="a13048">
+				                  <span class="finish" style="display:none">已学完</span></p>
+				                  <a class="study" href="/mayunxuanchuanpian.shtml?go=1" title="马上看" style="display:none;" target="_blank">马上看</a>
+
+				                  <div class="progress" style="display: none;">
+				                          <div class="progress_l"></div>
+				                          <div style="width:2px;" class="progress_c"></div>
+				                          <div class="progress_r"></div>
+				                  </div>
+				                  <span class="progress_info" style="display: none;">观看至10%</span>
+				         </div>
+				         <div class="flo_r">
+				                 <em class="icon_a" title="观看人数">276</em>|<em title="讨论人数" class="icon_b"  qid=0>0</em>
+				         </div>
+ 				</div>
+
+            </li>
+
+                      <li >
+                <a href="/youzhiyingzaizhongguoxuanchuanpian.shtml?go=1" class="img" title="《2016有志赢在中国》宣传片" target="_blank">
+                    <img src="picture/13046_190x14209100628.jpg" alt="《2016有志赢在中国》宣传片">
+                    <h3>《2016有志赢在中国》宣传片</h3>
+                </a>
+                <p>讲师：<strong class="name"><a title="王利芬" href="/youzhiyingzaizhongguoxuanchuanpian.shtml?go=1" target="_blank">王利芬</a></strong> <i class="ico_picnew"></i></p>
+                <p>
+                	<span>优米创始人&amp;总裁           </span>
+                </p>
+
+                <div class="c_info">
+				         <div class="flo_l" id="a13046">
+				                  <span class="finish" style="display:none">已学完</span></p>
+				                  <a class="study" href="/youzhiyingzaizhongguoxuanchuanpian.shtml?go=1" title="马上看" style="display:none;" target="_blank">马上看</a>
+
+				                  <div class="progress" style="display: none;">
+				                          <div class="progress_l"></div>
+				                          <div style="width:2px;" class="progress_c"></div>
+				                          <div class="progress_r"></div>
+				                  </div>
+				                  <span class="progress_info" style="display: none;">观看至10%</span>
+				         </div>
+				         <div class="flo_r">
+				                 <em class="icon_a" title="观看人数">84</em>|<em title="讨论人数" class="icon_b"  qid=0>0</em>
+				         </div>
+ 				</div>
+
+            </li>
+ -->
+                     <li class="c_list_more"><a href="/home/mycourse/"><em></em><span>更多课程</span></a></li>
+         </ul>
+
+    </div>
+ <script>
+ var aids_mycourse = 'a13064,a13054,a13052,a13048,a13046';
+ </script>   <script>var aids_watchlog='';</script>
+   
+<!--[if IE 6]>
+<script type="text/javascript">
+DD_belatedPNG.fix('.column_list_home .column_list .column_list_c .ph_list .list_c');
+</script>
+<![endif]-->
+	
+ 
+  <div class="w_950_b"></div>
+
+</div>
+      <script type="text/javascript">
+        var aids = aids_mycourse+','+aids_watchlog ;
+        $(function(){
+        	 $.getJSON('/watchlog/progress/',{aids:aids},function(r){
+         		if (r.status = 200) 
+         		{
+     				var res = r.data;
+     				$.each(res,function(k,v){
+     					
+     					var div_obj = $('#'+k);
+     					var v = v.split(',');
+     					var v1 = v[0];
+     					var v2 = v[1];
+     					var percent = 1;
+     					if (v1 == v2) //已看完
+     					{
+     						div_obj.find('.finish').show();
+     						div_obj.find('.study').hide();
+     						div_obj.find('.progress,.progress_info').hide();
+     					}
+     					else if (v1==0) //从未看过
+     					{
+     						div_obj.find('.study').show();
+     						div_obj.find('.finish').hide();
+     						div_obj.find('.progress,.progress_info').hide();
+     						
+     					}
+     					else //没看完
+     					{
+     						div_obj.find('.progress').show();
+     						div_obj.find('.progress_info').hide();
+     						div_obj.find('.finish').hide();
+     						div_obj.find('.study').hide();
+     						percent = v1/v2;
+     						div_obj.find('.progress_c').animate({width:73*percent});
+         					div_obj.find('.progress_info').html('观看至'+parseInt(percent*100)+'%');
+     					}
+     					
+     				});
+         		}
+             });
+             
+
+        });
+       
+        </script>
+     
+<!--在线客服--><style type="text/css">
+.box_os .os_x, .box_os .osqq, .ico_os, .acbox .ico_gt, .acbox .ico_pp, .onlineService .ico_gt a, .onlineService .ico_pp a, .osqq .qq,.box_os .dcode,.onlineService .ico_dcode,.dimensionalCode, .olqqtel .qq{ background:url(images/onlineservice201501.gif) no-repeat;}
+.box_os{ height:auto; overflow:hidden; width:131px; position:fixed; right:0; top:150px; _position:absolute; z-index:9999;display:none;}
+.box_os .os_x{ background-color:#fff; background-position:2px 2px; width:18px; height:20px; float:right; display:inline; cursor:pointer;}
+.box_os .osqq{ width:129px; border:1px solid #D1D1D1; background-color:#fff; background-position:0 -378px; clear:both; padding:37px 0 8px 0; text-align:center;}
+.box_os .osqq p{ height:auto; line-height:20px;width:129px; margin-top:8px;}
+.box_os .osqq p strong{ color:#666;}
+.box_os .osqq img{ padding:7px 0 3px 0;}
+.box_os .osqq p em{ color:#999; display:block;}
+.box_os .osqq p span{ color:#547816; display:block;}
+.box_os .osqq .qq{ background-position:-140px -120px; display:block; width:99px; height:26px; margin:0 auto; margin-top:8px; cursor:pointer;}
+.acbox{ width:130px; overflow:hidden;}
+.acbox .ico_gt{ background-position:-60px 0; border:1px solid #ff9900; border-top:0; cursor:pointer; width:60px; height:33px; float:right;}
+.acbox .ico_pp{ background-position:-60px -60px; border:1px solid #81b140; border-top:0; cursor:pointer; width:60px; height:33px; float:right; margin:0 2px;}
+.onlineService{ background:none; display:none; width:39px; position:fixed; right:0; top:150px; _position:absolute;z-index:9999;}
+.onlineService .ico_os{ background-position:-2px -20px; border:1px solid #c7c7c7; cursor:pointer; width:37px; height:98px; position:relative;}
+.onlineService .ico_gt, .onlineService .ico_pp{ width:39px; height:39px; position:relative; margin-bottom:1px;}
+.onlineService .ico_gt a, .onlineService .ico_pp a{ background-position:right 0; border:1px solid #ff9900; cursor:pointer; display:block; width:37px; height:37px; position:absolute; top:0; right:0; _right:-1px; overflow:hidden;}
+.onlineService .ico_pp a{ background-position:right -60px; border:1px solid #81b140;}
+.box_os .osqq p span a{color:#557917;}
+.box_os .dcode{ width:100px; height:115px; background-position:-174px -176px; margin:12px 0 0 12px; padding-bottom:8px;}
+.onlineService .ico_dcode{ background-position:-131px 0; width:37px; height:36px; border:1px solid #5E5E5D;}
+.dimensionalCode{ width:0; overflow:hidden; height:190px; right:38px; top:28px; position:absolute; background-position:0 -176px;}
+
+.olqqtel{ background-color:#fff; border:1px solid #c7c7c7; border-right:0; cursor:default; width:0; overflow:hidden; height:98px; right:38px; _right:37px; top:0; position:absolute;}
+.olqqtel p span{ color:#547816; display:block; text-align:center; white-space:nowrap;}
+.olqqtel .qq{ background-position:-140px -120px; display:block; width:99px; height:26px; margin:15px auto 8px; cursor:pointer;}
+</style>
+<script src="js/feedback_util.js"></script>
+<script charset="utf-8" src="js/wpa.js"></script>
+<div class="box_os">
+	<div class="os_x"></div>
+<div class="osqq">
+    <p><em>工作日：9:30-18:30</em></p>
+    	<p><strong>在线QQ</strong></p>
+        <p id="ico_onlineqq" class="qq"></p>
+        <p><strong>客服电话</strong><span>010-85801860</span></p>
+        <p><strong>微博</strong><span><a href="http://weibo.com/umiwi" target="_blank">@优米网</a></span></p>
+        <div class="dcode"></div>
+    </div>
+    <div class="acbox">
+    	<a class="ico_pp" onclick="FeedbackUtil.feed('http://www.umiwi.com/account/suggestion.php?action=save');" href="javascript:void(0);" title=""></a>
+        <a class="ico_gt" href="javascript:void(0);" title=""></a>
+    </div>
+</div>
+<div class="onlineService">
+    <div class="ico_os"></div>
+    <div class="olqqtel">
+        <p id="ico_onlineqq2" class="qq"></p>
+        <p><span>010-85801860</span></p>
+    </div>  
+    <div class="ico_pp"><a onclick="FeedbackUtil.feed('http://www.umiwi.com/account/suggestion.php?action=save');" href="javascript:void(0);" title=""></a></div>
+    <div class="ico_gt"><a href="javascript:void(0);" title=""></a></div>
+    <div class="ico_dcode">
+        <div class="dimensionalCode"></div>
+    </div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+BizQQWPA.addCustom({
+nameAccount: '800021784', 
+selector: "ico_onlineqq"  
+});
+BizQQWPA.addCustom({
+nameAccount: '800021784', 
+selector: "ico_onlineqq2"  
+});
+var _hmt = _hmt || [];
+var _identity = _identity || getVip();
+
+if (_identity === false)
+{
+    _identity = '-1';
+}
+    $('#ico_onlineqq').bind('click',function()
+    {
+        try{
+            var _host=window.location.host;
+            var _pathname=window.location.pathname;
+            var _label = _host+_pathname;
+            _hmt.push(['_trackEvent','QQservice','click',_label,_identity]);
+        } catch(e){}
+    });
+</script>
+<!-- WPA Button Begin -->
+<!-- WPA Button END --><script src="js/feedback_util.js"></script>
+
+<div id="footer">
+	<div class="foot_bgline">
+		<span title="客服电话" class="tel">客服电话：010-85801860&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总机电话：010-85807900-0&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:zhaopin.umiwi@youmi.cn"  target="_self">投送简历：zhaopin.umiwi@youmi.cn</a></span>
+	</div>
+	<p>
+		<a href="http://v.youmi.cn/coin/?click=1075" title="积分商城" target="_blank" class="">积分商城</a>|
+		<a href="http://ka.youmi.cn/?click=1076" title="开通会员卡" target="_blank" class="">开通会员卡</a>|
+		<a href="http://www.youmi.cn/zhaoshang/" title="代理招商" target="_blank" class="">代理招商</a>|
+		<a href="http://m.youmi.cn/?click=1074" title="客户端" target="_blank" class="">客户端</a>|
+		<a href="http://v.youmi.cn/member/diamond?click=1077" title="钻石会员" target="_blank" class="help">钻石会员</a>
+	</p>
+	<p><!--<a href="http://i3.umivi.net/u/help/images/wenhua.jpg" title="网络文化经营许可" target="_blank">-->京网文[2014]0068-0018号<!--</a>-->&nbsp;&nbsp;<a href="http://i3.umivi.net/u/help/images/xukezheng.jpg" title="视听许可证号" target="_blank">视听许可证号0110567</a>&nbsp;&nbsp;京ICP证090644号&nbsp;&nbsp;&nbsp;&nbsp;京ICP备05039090号-4
+&nbsp;&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502002009"><img src="picture/beian_icon.png" alt="" style="vertical-align: middle;">京公网安备 11010502002009号</a></p>
+	<p>北京优视米网络科技有限公司&nbsp;&nbsp;Umiwi版权所有</p>
+    <p>
+	    <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202012080900018" target="_blank"><img src="picture/footer-1.gif" /></a>
+	    <a href="http://net.china.com.cn/" target="_blank"><img src="picture/footer-2.gif" /></a>
+	    <a href="http://www.bj.cyberpolice.cn/index.jsp" target="_blank"><img src="picture/footer-3.gif" /></a>
+	</p>
+<!--活动 开始-->
+
+
+
+
+
+
+
+<script type="text/javascript">
+var _hmt = _hmt || [];
+var _identity = '1';
+_hmt.push(['_setCustomVar', 1, 'member', _identity, 1]);
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F141363f47b28d4741ef5d6139d5f0cf0' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<div style="display: none;">
+	<script src="js/z_stat.js" language="JavaScript"></script>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

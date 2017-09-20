@@ -1,0 +1,104 @@
+﻿@charset "utf-8";
+
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,input,p,blockquote,th,td,form,p{margin:0;padding:0;}
+body,html{_background-image:url(about:blank);_background-attachment:fixed;}
+ol,ul,li,dd,dt,dl{list-style:none;}
+img{border:0;}
+input,select,textarea{font-size:12px; color:#333; font-family:"Lantinghei SC","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif;}/*-000-*/
+html{text-align:center;}/*-000-*/
+body{ min-width:950px; text-align:left; font:12px/1.5em "Lantinghei SC","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif; color:#333; padding-top:36px;}/*-000-*/
+:focus{outline:none;}
+em,th{font-style:normal;font-weight:normal;}
+.table{border-collapse:collapse;border-spacing:0;empty-cells:show;}
+
+a.img {position:relative;}
+a.img span {width:28px; height:28px; display:block; _-moz-opacity:0.8;_opacity:0.8; bottom:5px; right:5px; position:absolute; background:url(../images/videoico.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i3.umivi.net/u/2012/public/images/videoico.png')}
+a.img em{background:url(../images/videoico_zj.gif) no-repeat;width:40px; height:40px; display:block; bottom:0; right:0; position:absolute;}
+
+/*width*/
+.wrapper, .w_950{width:950px; margin:0 auto; clear:both;}
+.w_625{width:625px;}
+.w_300{width:300px;}
+/*float*/
+.flo_l{float:left;}
+.flo_r{float:right;}
+.clear{clear:both; width:100%;height:0px;font-size:0; line-height:0;}
+/*link*/
+.gray3{ color:#333 !important;}
+.gray6{ color:#666 !important;}
+.gray9{ color:#999 !important;}
+.green{ color:#557917;}
+a{ color:#333; text-decoration:none; -moz-transition:color 0.2s; -o-transition:color 0.2s; -webkit-transition:color 0.2s; transition:color 0.2s;}/*-000-*/
+a:hover { color:#ff6c00; text-decoration:none;}/*-000-*/
+.highlight{ color:#ff6c00 !important;}/*-000-*/
+.mar_t30{ margin-top:30px;}
+.pad_l0{ padding-left:0 !important}
+
+.paging .paging_p,.paging .paging_n{ background:url(../images/public_ico.gif) no-repeat;}
+.clist_ico .zx_n1, .clist_ico .zx_n2, .clist_ico .zx_n3{ background:url(../images/public_ico.png) no-repeat;}
+.clist_ico .zx_n1, .clist_ico .zx_n2, .clist_ico .zx_n3{ color:#999; padding-left:22px; margin-right:15px; font-family:"Simsun"; display:inline-block; line-height:24px;}
+.clist_ico .zx_n1{ background-position:0 0;}
+.clist_ico .zx_n2{ background-position:0 -30px;}
+.clist_ico .zx_n3{ background-position:0 -60px;}
+
+/*按钮*/
+.button_a{ background-color:#ff7800; color:#fff; text-align:center; font-size:16px; -moz-border-radius:3px; border-radius:3px;}/*橙色 默认样式，使用时添加宽高*/
+.button_a:hover{ color:#fff !important; text-decoration:none;}
+
+.button_c{ background-color:#ececec; border:1px solid #dcdcdc; color:#666; text-align:center; font-size:16px; -moz-border-radius:3px; border-radius:3px;}/*灰色 有边框 默认样式，使用时添加宽高*/
+.button_c:hover{ color:#666 !important; text-decoration:none;}
+
+/*浮层遮罩层*/
+.layerwrap{ width:100%; position:absolute; top:0; left:0; z-index:999; background:rgba(0,0,0,0.6); filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#99000000,endcolorstr=#99000000,gradientType=0); display:none;}
+
+
+/*翻页*/
+.paging {text-align:center;margin-top:25px; float:left; clear:both; width:100%; position:relative; zoom:1; height:35px; overflow:hidden;}
+.paging form{ display:inline;}
+.paging em{ margin-left:10px;}
+.paging b{ vertical-align:middle; margin-left:10px; font-weight:normal; line-height:22px; display:inline-block; height:auto; overflow:hidden;}
+.paging a,.paging span {height:32px; line-height:32px; padding:0 14px; border:1px solid #E5E5E5; margin:0; background:#F8F8F8; display:inline-block; color:#322D29; font-family:"宋体"; margin-left:-1px; position:relative; z-index:1;}
+.paging span {color:#C4C4C4; border:1px solid #C0C0C0;}
+.paging .on {color:#fff; border:1px solid #FF7800; background-color:#FF7800; position:relative; z-index:3;}
+.paging .text{ width:46px; height:22px; line-height:22px; text-align:center; background-color:#F8F8F8; border:1px solid #E5E5E5; margin-left:6px; color:#666;}
+.paging .text_on{border:1px solid #FF7800 !important;}
+.paging .button{ border:0; width:0; height:24px; cursor:pointer; background-color:#FF7800; color:#fff; }
+.paging b i{ font-style:normal; float:left;}
+.paging b input{ float:left; display:inline;}
+.paging .paging_p{ background-color:#F8F8F8; margin-right:9px;}
+.paging .paging_n{ background-color:#F8F8F8; margin-left:9px;}
+.paging a.paging_p{background-position:-35px -86px;}
+.paging a.paging_n{background-position:-35px -129px;}
+.paging a.paging_p:hover{background-position:-35px -260px;z-index:5;}
+.paging a.paging_n:hover{background-position:-35px -306px;z-index:5;}
+.paging span.paging_p{background-position:-35px -175px;}
+.paging span.paging_n{background-position:-35px -218px;}
+.paging a:hover{ border:1px solid #FF7800; color:#FF7800 !important; text-decoration:none !important; z-index:3;}
+
+
+/*帮助链接*/
+.helpLink{ width:950px; height:35px; clear:both; margin:0 auto; padding:40px 0;}
+.helpLink li{ width:25%; float:left;height:35px; line-height:35px; overflow:hidden;}
+.helpLink li strong{ float:left; margin-right:4px;color:#333; font-size:18px; background:url(../images/helplink_icon.png) no-repeat;}
+.helpLink li strong a{ float:left; }
+.helpLink li p{ font-size:12px; color:#666; margin-top:4px;}
+.helpLink li p a{ float:left;margin-left:8px; display:inline;}
+.helpLink li.no1 strong{ padding-left:32px; background-position:-5px 1px;}
+.helpLink li.no2 strong{padding-left:39px;background-position:-1px -98px;}
+.helpLink li.no3 strong{padding-left:34px;background-position:-4px -140px;}
+.helpLink li.no4 strong{padding-left:32px;background-position:-4px -46px;}
+.helpLink li.no1{ width:26%;}
+.helpLink li.no2{ width:26%;}
+.helpLink li.no3{ width:26%;}
+.helpLink li.no4{ width:22%;}
+
+
+/*会员图标*/
+.v21, .v22, .v23, .v24{ vertical-align:middle; display:inline-block; margin:0 2px; width:15px; height:15px; cursor:pointer; line-height:0; font-size:0; overflow:hidden;}
+.v21{ background:url(../images/v21.gif) no-repeat -1px -1px;}
+.v22{ background:url(../images/v22.gif) no-repeat -1px -1px;}
+.v23{ background:url(../images/v23.gif) no-repeat -1px -1px;}
+.v24{ background:url(../images/v24.gif) no-repeat -1px -1px;}
+
+
+

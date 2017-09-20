@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>登录</title>
+<link rel="stylesheet" type="text/css" href="css/public20150101_1.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/login_1.css" />
+</head>
+<body  onkeydown="if(event.keyCode==13)totalLogin.login()">
+
+<div class="head">
+	<div class="head_c">
+	  	<a class="logo" href="/"></a>
+	  	<span><a href="/">首页</a>|<a href="http://www.umiwi.com/help/questionanswer.shtml"></a></span>
+	</div>
+</div>
+<script src="js/jquery_1.js"></script>
+<script src="js/jquery.md5.js"></script>
+<div class="logwrap">
+	<div class="cpjs">
+		
+<div class="hot_play_box">
+<div class="hot_play" id="slides">
+<div class="slides_container" id="lunbo">
+<li>
+    <a href="http://v.umiwi.com/album/10642.shtml?click=177" title="公司如何制定年度经营计划 " target="_blank"><img src="picture/20130819184307.jpg" width="288" height="216" alt="公司如何制定年度经营计划 " /><span class="ico_vd"></span></a>
+</li>
+<li>
+    <a href="http://v.umiwi.com/album/10588.shtml?click=177" title="解析《水浒传》用人策略：如何搭班子 " target="_blank"><img src="picture/20130729182445.jpg" width="288" height="216" alt="解析《水浒传》用人策略：如何搭班子 " /><span class="ico_vd"></span></a>
+</li>
+<li>
+    <a href="http://v.umiwi.com/album/11074.shtml?click=177" title="30分钟速成：老板最喜欢的工作报告 " target="_blank"><img src="picture/20140610160823.jpg" width="288" height="216" alt="30分钟速成：老板最喜欢的工作报告 " /><span class="ico_vd"></span></a>
+</li>
+<li>
+    <a href="http://v.umiwi.com/album/10983.shtml?click=177" title="“每单只赚一元钱”带来40万用户 " target="_blank"><img src="picture/20131227174525.jpg" width="288" height="216" alt="“每单只赚一元钱”带来40万用户 " /><span class="ico_vd"></span></a>
+</li>
+</div>
+</div>
+</div>
+
+<script src="js/jquery.slides.min.js"></script>
+<script type="text/javascript">
+$('#slides').slides({
+		preload: true,
+		play: 5000,
+		pause: 2500,
+		hoverPause: true,
+		animationStart: function(){
+			$('.caption').animate({
+				bottom:-35
+			},100);
+		},
+		animationComplete: function(current){
+			$('.caption').animate({
+				bottom:0
+			},200);
+		}
+	});
+
+
+</script>	</div>
+
+	<div class="registercontent bdbox">
+  		<div class="login_c">
+    		<h2>用户登录</h2>
+    			<ul class="rlogin">
+					<li>
+						<span class="l">帐号：</span>
+						<span class="r">
+							<span class="input"><input name="username" id="username" type="text" tabindex="1" onfocus="totalLogin.setInit();" placeholder="用户名/邮箱/手机"></span>
+		                    <em class="t_right" ></em><em class="t_wrong">用户名不能为空<em></em></em><label id="username_label"></label>
+						</span>
+
+					</li>
+		            <li><span class="l">密码：</span>
+						<span class="r">
+							<span class="input"><input  name="password" id="password" type="password" tabindex="2" onfocus="totalLogin.setInit();" placeholder="密码"></span>
+							<em class="t_right"></em><em class="t_wrong">密码不能为空<em></em></em><label id="password_label"></label>
+						</span>
+					</li>
+		            <li class="yhxy">
+						<span class="r">
+							<label for=""><input type="checkbox" tabindex="6" id="expire" name="expire" value="315360000" checked >下次自动登录</label>
+							<a class="fogetpsw" target="_blank" href="/retrieve/">忘记密码？</a>
+
+						</span>
+					</li>					
+		            <li class="cwts" id="cwts" style='display:none;'>用户名/邮箱或密码错误，请重新输入。<em></em></li>
+		            <li class="zc">
+						<input type="button" id="js_login" tabindex="7" class="btnreg" value="立即登录">
+													<!-- <a style="line-height: 35px;" href="/login?fbb=1">切换到房宝宝账号登录</a> -->
+											</li>
+				</ul>
+
+				<!-- <div class="thirdlg">
+					<dt>第三方账号登录：</dt>
+				    <dd>
+				    	<ul class="thirdlist">
+				        	<li class="sina"><a href="javascript:void(0)" onclick="oauthLogin(2)">新浪微博</a></li>
+				      		<li class="qq"><a href="javascript:void(0)"  onclick="oauthLogin(4)">QQ</a></li>
+				  		</ul>
+				     </dd>
+				</div> -->
+
+				<p class="t_p">还没有微伴儿账号？<a class="c_f60" href="/resiter.html">免费注册&gt;&gt;</a><a href="javascript:void(0)" onclick="QRLogin.toggleqr()" style="display:none;">微伴儿网客户端扫二维码登录&gt;&gt;</a> </p>
+
+   				<div class="qrlogin" style="height:225px;border:0px solid red;display:none;padding-left:20px;">AAA</div>
+
+	<style>
+	.placeholder{color:#ccc;}
+	</style>
+	<!-- <script src="js/jquery.placeholder.js"></script> -->
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<script src="js/jquery.jsoncookie.js"></script>
+	<script>
+		$('#js_login').on('click',function(){
+	        var username = $('#username').val();
+	        var password = $('#password').val();
+	        $.ajax({
+	            type:'GET',
+	            url:'http://39.108.4.136/api/LoginStu',
+	            data:{account:username,pwd:password},
+	            dataType:'json',
+	            headers: {
+	                Accept: "application/json; charset=utf-8"
+	            },
+	            success:function(data){
+	                if(data.status == '1'){
+	                	var arrcol = data.data;
+	                	 window.localStorage.setItem( 'user', JSON.stringify( arrcol ) );
+	                	// $.JSONCookie('user',arrcol,{path: '/' });
+	                	location.href='index.html';
+	                }else{
+	                    gritterAdd('网络繁忙!');
+	                    return false;
+	                }
+	            }
+
+	        });
+	    })
+	</script>
+	
+  		</div>
+	</div>
+</div>
+
+<div class="w_950 adimg">
+<div class="ad95090" style="width:950px; height:120px; margin-top:20px; float:left; clear:both; "><a href="http://m.umiwi.com/m.shtml" target="_blank"><img src="picture/banner_1.jpg" /></a></div></div>
+
+
+<script type="text/javascript">var _trc_=_trc_||{},_prm_=_prm_||{}</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-10173336-8']);
+_gaq.push(['_trackPageview']);
+(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+</script>
+<script src="js/online_1.js"></script>
+<script type="text/javascript" src="js/notice_util_1.js"></script>
+<script type="text/javascript" charset="utf-8"  src="js/passport_util.js"></script>
+<script type="text/javascript" charset="utf-8"  src="js/jquery.md5.js"></script>
+<script defer>
+noticeUtil.get();
+noticeUtil.Interval = setInterval('noticeUtil.get()', 3000);
+</script>
+<script type="text/javascript" src="js/recoplay.js"></script>
+<div id="footer">
+		<div class="foot_bgline">			
+			<span title="客服电话" class="tel">客服电话：010-85801860&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总机电话：010-85807900-0</span>
+		</div>
+		<p>
+			<a href="http://www.youmi.cn/help/aboutus.shtml" title="关于我们" target="_blank" class="">关于我们</a>|
+			<a href="http://www.youmi.cn/help/founder.shtml" title="创始人" target="_blank" class="">创始人</a>|
+			<a href="http://www.youmi.cn/help/joinus.shtml" title="诚聘英才" target="_blank" class="">诚聘英才</a>|
+			<a href="http://www.youmi.cn/help/contactus.shtml" title="联系我们" target="_blank" class="">联系我们</a>|
+			<a href="http://www.youmi.cn/help/questionanswer.shtml" title="帮助中心" target="_blank" class="help">帮助中心</a>|
+			<a href="javascript:void(0);" onclick="FeedbackUtil.feed('/account/suggestion.php?action=save');"  title="意见反馈"  class="opinion">意见反馈</a>
+		</p>
+		<p>北京优视米网络科技有限公司&nbsp;&nbsp;Umiwi版权所有&nbsp;&nbsp;<a href="http://i3.umivi.net/u/help/images/xukezheng.jpg" target="_blank" title="视听许可证号">视听许可证号0110567</a>&nbsp;&nbsp;京ICP备05039090号
+&nbsp;&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502002009"><img src="picture/beian_icon_1.png" alt="" style="vertical-align: middle;">京公网安备 11010502002009号</a></p>
+		<p>广告招商热线：010-85890443&nbsp;&nbsp;商务合作热线：010-85807900-8196</p>
+	</div>
+<script src="js/online_1.js"></script>
+<script type="text/javascript" src="js/feedback_util.js"></script>
+<script type="text/javascript">
+var _hmt = _hmt || [];
+var _identity = typeof(getVip)=='function'?getVip():false;
+if (_identity === false)
+{
+    _identity = '-1';
+}
+_hmt.push(['_setCustomVar', 1, 'member', _identity, 1]);
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F141363f47b28d4741ef5d6139d5f0cf0' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+</body>
+</html>
+
+
+<div style="display: none;">
+	<!-- <script src="js/z_stat_1.js" language="JavaScript"></script> -->
+</div>
+</body>
+</html>

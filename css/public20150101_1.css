@@ -1,0 +1,48 @@
+﻿@charset "utf-8";
+
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,input,p,blockquote,th,td,form,p{margin:0;padding:0;}
+body,html{_background-image:url(about:blank);_background-attachment:fixed;}
+ol,ul,li,dd,dt,dl{list-style:none;}
+img{border:0;}
+input,select,textarea{font-size:12px; color:#333; font-family:"Lantinghei SC","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif;}
+html{text-align:center;}
+body{ text-align:left; font:12px/1.5em "Lantinghei SC","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif; color:#333; }
+:focus{outline:none;}
+em,th{font-style:normal;font-weight:normal;}
+.table{border-collapse:collapse;border-spacing:0;empty-cells:show;}
+
+a.img {position:relative;}
+a.img span {width:28px; height:28px; display:block; _-moz-opacity:0.8;_opacity:0.8; bottom:5px; right:5px; position:absolute; background:url(../images/videoico_1.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i3.umivi.net/u/2012/public/images/videoico.png')}
+a.img em{background:url(../images/videoico_zj_1.gif) no-repeat;width:40px; height:40px; display:block; bottom:0; right:0; position:absolute;}
+
+/*width*/
+.wrapper{width:1200px; margin:0 auto; clear:both;}
+
+.flo_l{float:left;}
+.flo_r{float:right;}
+.clear{clear:both; width:100%;height:0px;font-size:0; line-height:0;}
+/*link*/
+.gray3{ color:#333 !important;}
+.gray6{ color:#666 !important;}
+.gray9{ color:#999 !important;}
+.green{ color:#557917;}
+a{ color:#333; text-decoration:none; -moz-transition:color 0.2s; -o-transition:color 0.2s; -webkit-transition:color 0.2s; transition:color 0.2s;}
+a:hover { color:#ff6c00; text-decoration:none;}
+
+/*浮层遮罩层*/
+.layerwrap{ width:100%; position:absolute; top:0; left:0; z-index:999; background:rgba(0,0,0,0.6); filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#99000000,endcolorstr=#99000000,gradientType=0); display:none; z-index:999991;}
+
+/*会员图标*/
+.v21, .v22, .v23, .v24{ vertical-align:middle; display:inline-block; margin:0 2px; width:15px; height:15px; cursor:pointer; line-height:0; font-size:0; overflow:hidden;}
+.v21{ background:url(../images/v21_1.gif) no-repeat -1px -1px;}
+.v22{ background:url(../images/v22_1.gif) no-repeat -1px -1px;}
+.v23{ background:url(../images/v23_1.gif) no-repeat -1px -1px;}
+.v24{ background:url(../images/v24_1.gif) no-repeat -1px -1px;}
+
+/*-- 观看-回复数 --*/
+.clist_ico .zx_n1, .clist_ico .zx_n2, .clist_ico .zx_n3{ background:url(../images/public_ico_1.png) no-repeat; color:#999; padding-left:21px; margin-right:10px; font-family:"Simsun"; display:inline-block; line-height:24px;}
+.clist_ico .zx_n1{ background-position:0 0;}
+.clist_ico .zx_n2{ background-position:0 -30px;}
+.clist_ico .zx_n3{ background-position:0 -60px;}
+
+

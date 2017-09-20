@@ -1,0 +1,487 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/ico" href="http://www.umiwi.com/favicon64.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta align="center" name="viewport" content="width=320; initial-scale=1.0; maximum-scale=0.95;  user-scalable=no;"/>
+<title>注册</title>
+<link rel="stylesheet" type="text/css" href="css/public20150101.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.md5.js"></script>
+</head>
+<body>
+
+<div class="head">
+    <div class="head_c">
+        <a href="/" class="logo"></a>
+        <span><a href="/">首页</a>|<a href="http://www.umiwi.com/help/questionanswer.shtml"></a></span>
+    </div>
+</div>
+
+
+<div class="content bdbox">
+
+    <div class="content_l" >
+        <h2>用户注册</h2>
+         <!-- 注册提示 -->
+                 <div class="regtipbox"><a href="http://v.youmi.cn/course/?newprice=1&click=569" target="_blank"><img src="picture/regtip1.gif" /></a></div>
+
+        <ul class="rlogin">
+            <li class="Prompt" id="reg_tag"><span class="l">&nbsp;</span><span class="r"><span class="phone">手机注册，直接0元买课！</span></span></li><li class="Prompt" id="reg_wrong" style="display: none;"><span class="l">&nbsp;</span><span class="r"><span class="t_wrong"></span></span></li><li><span class="l">账号</span><span class="r"><span class="input"><input type="text" name="reg_username" id="reg_username" placeholder="请输入手机/邮箱" onfocus="totalReg.setInit();" onblur="totalReg.checkRegType($(this).val());"></span></span></li><li><span class="l">设置密码</span><span class="r"><span class="input"><input type="password" name="reg_password" id="reg_password" placeholder="6~16个字符，作为登录密码" onfocus="totalReg.setInit();"></span></span></li><li id="reg_phone_code" style="display: none;"><span class="l">免费验证</span><span class="r"><span class="input2"><input type="text" name="reg_pcode" id="reg_pcode" onfocus="totalReg.setInit();"></span><span class="send" id="reg_sendcaptcha" onclick="totalReg.sendCaptcha()">免费获取短信</span></span></li><li id="reg_image_code" style="display: none;"><span class="l">图形验证码：</span><span class="r"><span class="input2"><input type="text" name="reg_icode" id="reg_icode" onfocus="totalReg.setInit();"></span><img class="yzm_img" src="" onclick="totalReg.changeCaptcha();"></span></li><li class="yhxy"><span class="l">&nbsp;</span><span class="r"><input type="checkbox" checked="checked" id="reg_agree"><p>阅读并已同意<a target="_blank" href="http://www.youmi.cn/help/questionanswer.shtml#hyxy">《微伴儿网用户及会员协议》</a></p></span></li><li class="zc"><span class="l">&nbsp;</span><input type="button" class="btnreg" value="立即注册" id="regbutton" onclick="totalReg.reg()"><p>已有微伴儿账号？<a href="/login.html">直接登录&gt;&gt;</a></p></li>
+        </ul>
+    </div>
+
+    <div class="content_r" >
+        <p>其他网站账号登录：</p>
+        <ul class="loginlist">
+            <li class="no1"><a href="javascript:void(0);" onclick="oauthLogin(4)">QQ号</a></li>
+            <li class="no2"><a href="javascript:void(0);" onclick="oauthLogin(2)">新浪微博账户</a></li>
+            <!-- <li class="no3"><a href="javascript:void(0);">微信账户</a></li> -->
+        </ul>
+        <div><img src="picture/ewm.png" width="212" height="171" alt="" /></div>
+    </div>
+</div>
+
+    <!-- 注册成功弹窗 -->
+    <div id="vpopup_wrap" style="display:none;"></div>
+    <div id="vpopup" style="display:none;">
+        <!-- 注册成功内容 s -->
+        <div class="layer_c reglayer">
+            <div class="regboxtop"></div>
+            <div class="regboxcon">
+                <h3><em></em>注册成功啦！</h3>
+
+                                <p>海量<strong>免费</strong>课邀您看！别犹豫！马上看课去！</p>
+
+                
+                <p><a class="green" href="http://v.youmi.cn/course/?newprice=1&click=567"  target="_blank">如果页面跳转失败请手动点击这里进行跳转</a></p>
+            </div>
+            <div class="regboxbottom">微伴儿客户端（覆盖iPhone、iPad、Android）学习更方便，支持课程下载，离线观看！</div>
+        </div>
+    </div>
+
+
+
+
+
+
+<div class="w_950 adimg">
+<div class="ad95090" style="width:950px; height:120px; margin-top:20px; float:left; clear:both; "><a href="http://m.umiwi.com/m.shtml" target="_blank"><img src="picture/banner.jpg" /></a></div></div>
+
+
+<script type="text/javascript">var _trc_=_trc_||{},_prm_=_prm_||{}</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-10173336-8']);
+_gaq.push(['_trackPageview']);
+(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+</script>
+<script src="js/online.js"></script>
+<script type="text/javascript" src="js/notice_util.js"></script>
+<script type="text/javascript" charset="utf-8"  src="js/passport_util.js"></script>
+<script type="text/javascript" charset="utf-8"  src="js/jquery.md5.js"></script>
+<script defer>
+noticeUtil.get();
+noticeUtil.Interval = setInterval('noticeUtil.get()', 3000);
+</script>
+<script type="text/javascript" src="js/recoplay.js"></script>
+<div id="footer">
+		<div class="foot_bgline">			
+			<span title="客服电话" class="tel">客服电话：010-85801860&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总机电话：010-85807900-0</span>
+		</div>
+		<p>
+			<a href="http://www.youmi.cn/help/aboutus.shtml" title="关于我们" target="_blank" class="">关于我们</a>|
+			<a href="http://www.youmi.cn/help/founder.shtml" title="创始人" target="_blank" class="">创始人</a>|
+			<a href="http://www.youmi.cn/help/joinus.shtml" title="诚聘英才" target="_blank" class="">诚聘英才</a>|
+			<a href="http://www.youmi.cn/help/contactus.shtml" title="联系我们" target="_blank" class="">联系我们</a>|
+			<a href="http://www.youmi.cn/help/questionanswer.shtml" title="帮助中心" target="_blank" class="help">帮助中心</a>|
+			<a href="javascript:void(0);" onclick="FeedbackUtil.feed('/account/suggestion.php?action=save');"  title="意见反馈"  class="opinion">意见反馈</a>
+		</p>
+		<p>北京优视米网络科技有限公司&nbsp;&nbsp;Umiwi版权所有&nbsp;&nbsp;<a href="http://i3.umivi.net/u/help/images/xukezheng.jpg" target="_blank" title="视听许可证号">视听许可证号0110567</a>&nbsp;&nbsp;京ICP备05039090号
+&nbsp;&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502002009"><img src="picture/beian_icon.png" alt="" style="vertical-align: middle;">京公网安备 11010502002009号</a></p>
+		<p>广告招商热线：010-85890443&nbsp;&nbsp;商务合作热线：010-85807900-8196</p>
+	</div>
+<!-- <script src="js/online.js"></script> -->
+<!-- <script type="text/javascript" src="js/feedback_util.js"></script> -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+var _identity = typeof(getVip)=='function'?getVip():false;
+if (_identity === false)
+{
+    _identity = '-1';
+}
+_hmt.push(['_setCustomVar', 1, 'member', _identity, 1]);
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F141363f47b28d4741ef5d6139d5f0cf0' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+</body>
+</html>
+
+
+<div style="display: none;">
+	<!-- <script src="js/z_stat.js" language="JavaScript"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</div>
+<script>
+$(function(){
+    $('#regbutton').on('click',function(){
+        var account = $('#reg_username').val();
+        var pwd = $('#reg_password').val();
+        $.ajax({
+            type:'POST',
+            url:'http://39.108.4.136/api/addStudent',
+            data:{account:account,pwd:pwd},
+            dataType:'json',
+            headers: {
+                Accept: "application/json; charset=utf-8"
+            },
+            success:function(data){
+                if(data.code == '1000'){
+                    location.href="login.html";
+                }else{
+                    gritterAdd('网络繁忙!');
+                    return false;
+                }
+            }
+
+        });
+    })
+})
+    
+//  function oauthLogin(id)
+//  {
+//    //以下为按钮点击事件的逻辑。注意这里要重新打开窗口
+//    //否则后面跳转到QQ登录，授权页面时会直接缩小当前浏览器的窗口，而不是打开新窗口
+//     if(id==1){var w=450;h=320;}
+//     if(id==2){var w=650;h=360;}
+//     if(id==3){var w=450;h=320;}
+//     if(id==4){var w=570;h=460;}
+
+//    var A=window.open("/login/oauth/?to="+id,"WinLogin",
+//    "width="+w+",height="+h+",left="+parseInt((screen.availWidth -  w)/2-50)+",top="+parseInt((screen.availHeight - h)/2-50)+",menubar=0,scrollbars=1,resizable=1,status=1,titlebar=0,toolbar=0,location=1");
+
+//  }
+// var totalReg={
+//     _regUrl:'http://passport.youmi.cn/register/newreg/',
+//     _unavaliblepassword:',123456789,12345678,11111111,00000000,1234567890,88888888,123123123,123456,111111111,aaaaaa,aaaaaa,aaaaaaaa,987654321,147258369,iloveyou,1111111111,66666666,password,11223344,12344321,000000000,99999999,0123456789,12121212,1qaz2wsx,123456123,31415926,123654789,asdfghjkl,a123456789,qq123456,12341234,1q2w3e4r,111111,123321123,789456123,qqqqqqqq,qazwsxedc,19820619,1234,110110110,55555555,qwertyuiop,1234qwer,abcd1234,12345678A,0000000000,123456123456,33333333,zzzzzzzz,87654321,zhangjianian,abc123456,10101010,asdfghjk,77777777,123456789a,999999999,kent123456,qwertyui,llllllll,123456abc,521521521,lovesunnyleefe,1111,q1w2e3r4,123698745,xiazhili,qweqweqwe,zhen7919238,asd123456,403403328,zxcvbnm123,WOAINI1314,shanghai,19881202,jingjing,584131420,123456987,321321321,19781015,weikkkkk,3.1415926,7894561230,aa123456,111222333,shens1d2gf,f19841205,15871718415,qwer1234,a12345678,151561614,buzhidao,369258147,5845201314,asdfasdf,qwe123456,qweasdzxc,',
+
+//     reg:function(){
+
+//         if (totalReg.regType == 'mobile') {
+//             if (!(this.checkMobile(false) && this.checkpCode())) {
+//                 return false;
+//             }
+//         } else if (totalReg.regType == 'email') {
+//             if (!(this.checkEmail(false) && this.checkiCode())) {
+//                 return false;
+//             }
+//         } else {
+//             totalReg.setWrong('请输入手机或邮箱作为账号');
+//             return false;
+//         }
+//         if(!(this.checkPassword() && this.checkAgree()))
+//         {
+//             return false;
+//         }
+
+//         var username = $('#reg_username').val();
+//         var password = $.md5($('#reg_password').val());
+//         var captcha = (totalReg.regType == 'mobile')?$('#reg_pcode').val():$('#reg_icode').val();
+//         this.getscript(this._regUrl+'?callback=totalReg.regCallback&username='+encodeURI(username)+'&password='+encodeURI(password)+'&captcha='+encodeURI(captcha)+'&type='+totalReg.regType);
+//     },
+//     regCallback:function(obj)
+//     {
+//         if(obj.e=='9999')
+//         {
+//             $('body').append("<iframe height=1 width=1 src='http://passport.youmi.cn/register/success'></iframe>");
+//             setTimeout(function(){
+//                 window.location='/oauth/bindmobile';
+//                 },2000
+//             );
+//             return true;
+//         }
+//         if (obj.e == '9005') {
+//             totalReg.setWrong('图形验证码不正确');
+//             totalReg.changeCaptcha();
+//             return false;
+//         }
+//         if(obj.m)
+//         {
+//             totalReg.setWrong(obj.m);
+//         }else
+//         {
+//             totalReg.setWrong('系统忙，请稍后再试');
+//         }
+//         return ;
+//     },
+//     regType:'',
+//     checkRegType:function(str){
+//         if (str) {
+//             if (totalReg._ismobile(str)) {
+//                 totalReg.regType = 'mobile';
+//                 totalReg.checkMobile(true)
+//                 $('#reg_image_code').hide();
+//             } else if (totalReg._isEmail(str)) {
+//                 totalReg.regType = 'email';
+//                 $('#reg_phone_code').hide();
+//                 totalReg.checkEmail(true)
+//                 totalReg.changeCaptcha();
+//                 $('#reg_image_code').show();
+//             } else {
+//                 totalReg.regType = '';
+//             }
+//         }
+//     },
+//     _ismobile:function(str){
+//         return /^1[3|4|5|6|7|8|9][0-9]\d{8}$/.test(str);
+//     },
+//     _isEmail:function(str){  
+//         return /^[0-9a-z][_.0-9a-z-]{0,31}@([0-9a-z][0-9a-z-]{0,30}[0-9a-z]\.){1,4}[a-z]{2,4}$/.test(str);   
+//     },
+//     remoteCheckTag:false,
+//     checkMobile:function(remoteCheck){
+//         var mobile = $('#reg_username').val();
+//         if($.trim(mobile)=='')
+//         {
+//             totalReg.setWrong('账号不能为空');
+//             return false;
+//         }
+//         if(!this._ismobile(mobile))
+//         {
+
+//             totalReg.setWrong('请填写手机或邮箱');
+//             return false;
+//         }
+//         if(remoteCheck)
+//         {
+//             this.getscript('http://passport.youmi.cn/mobile/checkremobile/?callback=totalReg.checkmobileCallback&remobile='+mobile);
+//         }else
+//         {
+//             if (totalReg.remoteCheckTag) {
+//                 return true;
+//             } else {
+//                 totalReg.setWrong('手机号已被注册');
+//                 return false;
+//             }
+//         }
+//     },
+//     checkmobileCallback:function(result){
+//         if(result.code=='succ')
+//         {
+//             totalReg.setWrong('手机号已被注册');
+//             totalReg.remoteCheckTag = false;
+//             return false;
+//         }
+//         if(result.code=='fail')
+//         {
+//             $('#reg_phone_code').show();
+//             totalReg.remoteCheckTag = true;
+//             return true;
+//         }
+//         totalReg.setWrong('网络异常');
+//         return false;
+//     },
+//     sendCaptcha:function()
+//     {
+//         var mobile = $('#reg_username').val();
+//         var li_randcaptcha = $('#reg_image_code');
+//         var _sendurl = "http://passport.youmi.cn/mobile/send/?callback=totalReg.send_callback&mobile="+mobile;
+//         if(this.checkMobile(false) && this.checkPassword() && this.checkAgree()){
+            
+//             if (li_randcaptcha.is(":visible"))
+//             {
+//                 var txt_randcaptcha = $.trim(li_randcaptcha.find('input').val());
+//                 if (txt_randcaptcha.length == 4)
+//                 {
+//                     _sendurl +='&randcaptcha='+txt_randcaptcha;
+                    
+//                 }else{
+//                     totalReg.setWrong('验证码不正确，请重新输入');
+//                     li_randcaptcha.find('input').focus();
+//                 }
+                
+//             }
+//             this.getscript(_sendurl);
+//         }
+//     },
+//     send_callback:function(result)
+//     {
+        
+//         if(result.e == '9999')
+//         {
+//             totalReg.disablesend();
+//         }else if(result.e == '9005') 
+//         {
+//             totalReg.changeCaptcha();
+//             if ($('#reg_image_code').is(":visible"))
+//             {
+//                 totalReg.setWrong('图形验证码不正确，请重新输入');
+//             }else{
+//                 totalReg.setWrong('请求次数过多,请输入图形验证码');
+//                 $('#reg_image_code').show();
+//             }
+//         }
+//         else
+//         {
+//             totalReg.setWrong(result.m);
+//             totalReg.enablesend();
+//         }
+//     },
+//     changeCaptcha:function()
+//     {
+//         var img_randcaptcha = $('#reg_image_code').find('img');
+//         img_randcaptcha.attr('src','http://passport.youmi.cn/include/showcaptcha/?w=62&h=24&s=12&x='+Math.random());
+//     },
+//     disablesend:function()
+//     {
+//         window.timenum = 60;
+//         $('#reg_sendcaptcha').html('('+(window.timenum--)+')秒').attr('onclick','');
+//         window.timerhand = setInterval("totalReg.sendtimer()", 1000);
+//         setTimeout(function(){
+//             totalReg.enablesend();
+//         }, 60000);
+//     },
+//     enablesend:function()
+//     {
+//         window.clearInterval(window.timerhand);
+//         $('#reg_sendcaptcha').html('免费获取短信').attr('onclick','totalReg.sendCaptcha()');
+//     },
+//     sendtimer:function(){
+//         $('#reg_sendcaptcha').html('('+(window.timenum--)+')秒');
+//     },
+//     checkPassword:function()
+//     {
+//         var password = $('#reg_password').val();
+//         if(password.length<6 || password.length>16)
+//         {
+//             totalReg.setWrong('密码长度应为6');
+//             return false;
+//         }
+//         if((this._unavaliblepassword).indexOf(','+password+',')!=-1)
+//         {
+//             totalReg.setWrong('密码太简单，请换一个');
+//             return false;
+//         }
+//         return true;
+//     },
+//     getCookie:function(name)
+//     {
+//         var dc = document.cookie;
+//         var prefix = name + "=";
+//         var begin = dc.indexOf("; " + prefix);
+//         if (begin == -1) {
+//             begin = dc.indexOf(prefix);
+//             if (begin != 0) return null;
+//         } else {
+//             begin += 2;
+//         }
+//         var end = document.cookie.indexOf(";", begin);
+//         if (end == -1) {
+//             end = dc.length;
+//         }
+//         return unescape(dc.substring(begin + prefix.length, end));
+//     },
+//     checkEmail:function(remoteCheck){
+//         var email = $('#reg_username').val();
+//         if($.trim(email)=='')
+//         {
+//             totalReg.setWrong('账号不能为空');
+//             return false;
+//         }
+//         if(!this._isEmail(email))
+//         {
+//             totalReg.setWrong('请填写手机或邮箱');
+//             return false;
+//         }
+//         if(remoteCheck)
+//         {
+//             this.getscript('http://passport.youmi.cn/register/validUsername/?ref='+encodeURI(totalReg.getCookie('ref'))+'&callback=totalReg.checkEmailCallback&username='+encodeURI(email));
+//         }else
+//         {
+
+//         }
+//         return true;
+//     },
+//     checkEmailCallback:function(result){
+//         if(result=='repeat')
+//         {
+//             totalReg.setWrong('用户名已被使用');
+//             return false;
+//         }
+//         if(result=='invalid')
+//         {
+//             totalReg.setWrong('用户名包含不适当内容');
+//             return false;
+//         }
+//         if(result=='normal')
+//         {
+
+//         }
+//     },
+//     checkAgree:function()
+//     {
+//         if(document.getElementById('reg_agree').checked)
+//         {
+//             return true;
+//         }else
+//         {
+//             totalReg.setWrong('请阅读并同意用户协议');
+//         }
+//     },
+//     checkpCode:function()
+//     {
+//         if($('#reg_pcode').val())
+//         {
+//             return true;
+//         }else
+//         {
+//             totalReg.setWrong('请输入手机验证码');
+//         }
+//     },
+//     checkiCode:function()
+//     {
+//         if($('#reg_icode').val())
+//         {
+//             return true;
+//         }else
+//         {
+//             totalReg.setWrong('请输入图形验证码');
+//         }
+//     },
+//     charLength:function(str) {
+//         var realLength = 0, len = str.length, charCode = -1;
+//         for (var i = 0; i < len; i++) {
+//             charCode = str.charCodeAt(i);
+//             if (charCode >= 0 && charCode <= 128) realLength += 1;
+//             else realLength += 2;
+//         }
+//         return realLength;
+//     },
+//     setWrong:function(str){
+//         $('#reg_tag').hide();
+//         $('#reg_wrong').show();
+//         $('#reg_wrong .t_wrong').html(str);
+//     },
+//     setInit:function(id)
+//     {
+//         $('#reg_wrong').hide();
+//         $('#reg_tag').show();
+//         $('#bind_wrong').hide();
+//     },
+//     getscript:function (url) {
+//         url += '&t=' + (new Date).getTime();
+//         var s, c,  d = document, src = (url.indexOf("?") == "-1" ? url + "?" : url);
+//         (s = d.createElement("script")).setAttribute("type", "text/javascript");
+//         s.setAttribute("charset", "UTF-8");
+//         d.getElementsByTagName("head")[0].appendChild(s).src = src;
+
+//         s.onload = s.onreadystatechange = function(){ s.readyState ? s.readyState.toLowerCase() == 'loaded'  : '' };
+//     }
+// }
+</script>
+</body>
+</html>

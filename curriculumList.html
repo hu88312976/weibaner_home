@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>赢在中国 - 优米 - 商界领袖服务平台</title>
+<meta name="keywords" content="优米-赢在中国频道，提供赢在中国第一季、赢在中国第二季、赢在中国第三季、2013赢在中国·蓝天碧水间、2016有志·赢在中国全集、2017赢在中国、赢在中国马云演讲等视频全集。" />
+<meta name="description" content="视频,2017赢在中国,蓝天碧水间,合伙中国人,赢在中国全集,赢在中国第一季,赢在中国第二季,赢在中国总决赛,商战真人秀,马云演讲,王利芬,柳传志,史玉柱,李静,蔡明,汪小菲,姚劲波,牛根生,创业投资" />
+<meta name="author" content="优米" />
+<meta name="Copyright" content="优米版权所有" />
+<link href="css/public.css" rel="stylesheet" media="screen">
+<link href="css/list20170405.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/popup_util.js"></script>
+<script type="text/javascript" src="js/msg_util.js"></script>
+<script type="text/javascript" charset="utf-8"  src="js/passport_util.js"></script>
+<script type="text/javascript" charset="utf-8"  src="js/jquery.md5.js"></script>
+<script type="text/javascript" charset="utf-8"  src="js/list.js"></script>
+<base target="_blank" />
+<script type="text/javascript">
+	$(function(){
+		var catid= "1426";
+    	addTitleClass(catid);
+	});
+</script>
+</head>
+<body>	
+<link href="css/header20170630.css" rel="stylesheet" media="screen">
+<div class="topmenu">
+    <div class="wrapper">
+        <a href="http://www.youmi.cn"><img src="picture/logo_2017.png" alt="" class="logo"></a>
+		<ul class="navlist">
+            <li id="cs1"><a href="/" target="_self">首页</a></li>
+            <li class="on" id="cs2"><a href="/curriculumList.html" target="_self">学伴儿</a></li>
+            <li id="cs3" ><a href="javascript:void(0);" target="_self">玩伴儿</a></li>
+		</ul>
+		<form action="http://v.youmi.cn/search/result" id="search_form2">
+            <div class="searchbox">
+                <input type="text" class="searchtext" value="" name="q" id="searchField2"  x-webkit-speech="" onclick="$(this).select();"autocomplete="off" placeholder="请输入要查找的内容">
+                <input type="hidden" name="click" value="1078">
+                <input type="submit" class="searchbtn" value="">
+            </div>
+
+        </form>
+        
+        <script type="text/javascript">
+            $(function(){
+                var dcTimer;
+                $('#khdtitle a').hover(function(){
+                    clearTimeout(dcTimer);
+                    $("#dcodeico").show();
+                },function(){
+                    dcTimer=setTimeout(function(){$("#dcodeico").hide();},400);
+                });
+                $('#dcodeico').hover(function(){
+                    clearTimeout(dcTimer);
+                },function(){
+                    $(this).hide();
+                });
+                $.ajaxSetup({cache:true});
+                $('#searchField2').click(function(){
+                    setAutoComplete("searchField2", "results_ul_2", "http://api.v.umiwi.com/api5/suggest/?q=","search_form2");
+                });
+            })
+        </script>
+		<ul class="login_info" id="login2">
+	    </ul>
+	    <ul class="person" id="loggedin">
+	    </ul>
+    </div>
+    <div class="headbox">
+        <div class="wrapper">
+            <div class="dlbox">
+                 <div class="dlinfo">
+                     <span class="dl_c">
+                         <input type="text" class="txt_id" value="用户名/邮箱/手机号" tabindex="1" id="login_username1" onfocus="initlogin();">
+                         <input style="display:none;" type="password" class="txt_psw" value="" id="login_password1" onfocus="initlogin();" onkeydown="if (event.keyCode==13) indexlogin(1);">
+                         <input type="text" class="txt_psw" value="密码" tabindex="2" id="login_password_text1">                     
+</span>
+                     <input type="submit" class="dlbtn" value="登录" onclick="indexlogin(1);">
+                 </div>
+                 <p>
+                     <span class="dltip" id="wrong_tip1">账户名或密码错误，请重试！</span>
+                     <label><input type="checkbox" checked="" value="315360000" class="dlcheck" id="login_expire1">下次自动登录</label>
+                     <a href="http://passport.youmi.cn/retrieve/" target="_blank" class="highlight">忘记密码？</a>                    
+                 </p>           
+            </div>
+            <p class="dlthird">
+                 <span>使用其他账号登录：</span>
+                 <a href="javascript:void(0)" onclick="oauthLogin(2)" title="微博登录" class="dl_weibo" target="_self">微博登录</a>
+                 <a href="javascript:void(0)" onclick="oauthLogin(4)" title="QQ登录" class="dl_qq" target="_self">QQ登录</a>
+                 <a href="javascript:void(0)" onclick="oauthLogin(1)" title="人人登录" class="dl_renren" target="_self">人人登录</a>
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+    	$("#loggedin").hover(function(){
+    		$(".person .ps_list").show();
+    	},function(){
+    		$(".person .ps_list").hide();
+    	})
+    function backpast(){
+    	if($.cookie('ver') == null) {
+    		$.cookie("ver","2015",{expires:1,path:"/",domain:"youmi.cn"});
+    	}
+    	window.location.href="http://www.youmi.cn/indexold.shtml";
+    }	
+    </script>
+    <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+</div>
+<script type="text/javascript" src="js/signin2014.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/nav_common.js"></script>
+
+<script type="text/javascript" src="js/noticev_util.js"></script>
+<script defer>noticeUtil.get();
+noticeUtil.Interval = setInterval('noticeUtil.get()', 3000);
+</script>
+
+<div class="wrapper video-con">
+	<div class="flo_l sub-nav-l">
+				<dl class="sub-nav-con">
+			<dt><h2>热门标签</h2></dt>
+			<dd class="sub-nav-cnt01">
+				<dl>
+				<dd class="sub-nav-cnt02">
+					<ul id="industryList">
+					</ul>
+				</dd>
+				</dl>			
+			</dd>
+		</dl>
+						<dl class="sub-nav-con">
+			<dt><h2>热门推荐</h2></dt>
+			<dd class="sub-nav-cnt01">
+				<ul class="sub-nav-column2">
+							
+				</ul>
+			</dd>
+		</dl>
+		
+	</div>
+	<div class="flo_r search-con">
+						<div class="video-class">
+			<ul class="video-class-l">
+				<li class="current"><a data-type="" onclick="RwyData(this)">全部</a></li>
+				<li class=""><a data-type='1' onclick="RwyData(this)">分享</a></li>
+				<li class=""><a data-type='2' onclick="RwyData(this)">培训</a></li>
+			</ul>
+			<ul class="video-class-r">
+				<li class="order">排序：</li>
+				<li class="on"><a data-sort='' onclick="RwyData(this)">默认</a></li>
+				<li class=""><a data-sort='is_heat' onclick="RwyData(this)">热门</a></li>
+				<li class=""><a data-sort='price' onclick="RwyData(this)">价格</a></li>
+				<li class=""><a data-sort='buy_number' onclick="RwyData(this)">购买</a></li>
+				<li class=""><a data-sort='start_time' onclick="RwyData(this)">时间</a></li>
+			</ul>
+		</div>
+
+		<ul class="tagclass">
+			<li class="on"><a data-hot='' onclick="RwyData(this)">全部</a></li>
+			<li class=""><a data-hot='1' onclick="RwyData(this)">热门</a></li>
+		</ul>
+
+		<ul class="video-list video-list-w208">
+		</ul>
+		<div class="loading" style="display: none;"><span>正在加载，请稍候...</span></div>
+		<div class="paging" >
+<!-- <span class="paging_p">&nbsp;</span><span class="on">1</span><span class="paging_n">&nbsp;</span><em>共 1 页</em><form id="gotopage" method="GET" action=""><input type="hidden" name="catid" value="1426" /><input type="hidden" name="click" value="1467" /><b><i>跳转到</i><input name="p" type="text" class="text" id="gotopagenum"/><input value="确定" type="button" class="button" onclick="gotopage();"/></b></form>&nbsp;页 --></div>
+<script type="text/javascript">
+$(".paging .text").focus(function(){
+$(this).addClass("text_on");
+$(".paging b").animate({width:"138px"},260);
+$(".paging .button").animate({width:"48px"},300);
+});
+$(".paging .text").blur(function(){
+$(this).removeClass("text_on");
+$(".paging .button").animate({width:"0"},260);
+$(".paging b").animate({width:"90px"},300);
+});
+function gotopage()
+{
+	var min_pagenum = 1;
+	var max_pagenum = 1;
+	var gotopagenum = parseInt($('#gotopagenum').val());
+	if (!(gotopagenum >= min_pagenum  && gotopagenum<=max_pagenum))
+	{
+		alert('页码范围在'+min_pagenum+'到'+max_pagenum+'之间');
+		$('#gotopagenum').val('');
+	}else{
+		$('#gotopage').submit();
+	}
+}
+</script> 
+
+
+	</div>
+</div>
+
+<!--在线客服-->
+<style type="text/css">
+.box_os .os_x, .box_os .osqq, .ico_os, .acbox .ico_gt, .acbox .ico_pp, .onlineService .ico_gt a, .onlineService .ico_pp a, .osqq .qq,.box_os .dcode,.onlineService .ico_dcode,.dimensionalCode, .olqqtel .qq{ background:url(images/onlineservice201501.gif) no-repeat;}
+.box_os{ height:auto; overflow:hidden; width:131px; position:fixed; right:0; top:150px; _position:absolute; z-index:9999;display:none;}
+.box_os .os_x{ background-color:#fff; background-position:2px 2px; width:18px; height:20px; float:right; display:inline; cursor:pointer;}
+.box_os .osqq{ width:129px; border:1px solid #D1D1D1; background-color:#fff; background-position:0 -378px; clear:both; padding:37px 0 8px 0; text-align:center;}
+.box_os .osqq p{ height:auto; line-height:20px;width:129px; margin-top:8px;}
+.box_os .osqq p strong{ color:#666;}
+.box_os .osqq img{ padding:7px 0 3px 0;}
+.box_os .osqq p em{ color:#999; display:block;}
+.box_os .osqq p span{ color:#547816; display:block;}
+.box_os .osqq .qq{ background-position:-140px -120px; display:block; width:99px; height:26px; margin:0 auto; margin-top:8px; cursor:pointer;}
+.acbox{ width:130px; overflow:hidden;}
+.acbox .ico_gt{ background-position:-60px 0; border:1px solid #ff9900; border-top:0; cursor:pointer; width:60px; height:33px; float:right;}
+.acbox .ico_pp{ background-position:-60px -60px; border:1px solid #81b140; border-top:0; cursor:pointer; width:60px; height:33px; float:right; margin:0 2px;}
+.onlineService{ background:none; display:none; width:39px; position:fixed; right:0; top:150px; _position:absolute;z-index:9999;}
+.onlineService .ico_os{ background-position:-2px -20px; border:1px solid #c7c7c7; cursor:pointer; width:37px; height:98px; position:relative;}
+.onlineService .ico_gt, .onlineService .ico_pp{ width:39px; height:39px; position:relative; margin-bottom:1px;}
+.onlineService .ico_gt a, .onlineService .ico_pp a{ background-position:right 0; border:1px solid #ff9900; cursor:pointer; display:block; width:37px; height:37px; position:absolute; top:0; right:0; _right:-1px; overflow:hidden;}
+.onlineService .ico_pp a{ background-position:right -60px; border:1px solid #81b140;}
+.box_os .osqq p span a{color:#557917;}
+.box_os .dcode{ width:100px; height:115px; background-position:-174px -176px; margin:12px 0 0 12px; padding-bottom:8px;}
+.onlineService .ico_dcode{ background-position:-131px 0; width:37px; height:36px; border:1px solid #5E5E5D;}
+.dimensionalCode{ width:0; overflow:hidden; height:190px; right:38px; top:28px; position:absolute; background-position:0 -176px;}
+
+.olqqtel{ background-color:#fff; border:1px solid #c7c7c7; border-right:0; cursor:default; width:0; overflow:hidden; height:98px; right:38px; _right:37px; top:0; position:absolute;}
+.olqqtel p span{ color:#547816; display:block; text-align:center; white-space:nowrap;}
+.olqqtel .qq{ background-position:-140px -120px; display:block; width:99px; height:26px; margin:15px auto 8px; cursor:pointer;}
+</style>
+<script src="js/feedback_util.js"></script>
+<script charset="utf-8" src="js/wpa.js"></script>
+<div class="box_os">
+	<div class="os_x"></div>
+<div class="osqq">
+    <p><em>工作日：9:30-18:30</em></p>
+    	<p><strong>在线QQ</strong></p>
+        <p id="ico_onlineqq" class="qq"></p>
+        <p><strong>客服电话</strong><span>010-85801860</span></p>
+        <p><strong>微博</strong><span><a href="http://weibo.com/umiwi" target="_blank">@优米网</a></span></p>
+        <div class="dcode"></div>
+    </div>
+    <div class="acbox">
+    	<a class="ico_pp" onclick="FeedbackUtil.feed('http://www.umiwi.com/account/suggestion.php?action=save');" href="javascript:void(0);" title=""></a>
+        <a class="ico_gt" href="javascript:void(0);" title=""></a>
+    </div>
+</div>
+<div class="onlineService">
+    <div class="ico_os"></div>
+    <div class="olqqtel">
+        <p id="ico_onlineqq2" class="qq"></p>
+        <p><span>010-85801860</span></p>
+    </div>  
+    <div class="ico_pp"><a onclick="FeedbackUtil.feed('http://www.umiwi.com/account/suggestion.php?action=save');" href="javascript:void(0);" title=""></a></div>
+    <div class="ico_gt"><a href="javascript:void(0);" title=""></a></div>
+    <div class="ico_dcode">
+        <div class="dimensionalCode"></div>
+    </div>
+</div>
+<script type="text/javascript" src="js/onlineservice2014.js"></script>
+<script type="text/javascript">
+BizQQWPA.addCustom({
+nameAccount: '800021784', 
+selector: "ico_onlineqq"  
+});
+BizQQWPA.addCustom({
+nameAccount: '800021784', 
+selector: "ico_onlineqq2"  
+});
+var _hmt = _hmt || [];
+var _identity = _identity || getVip();
+
+if (_identity === false)
+{
+    _identity = '-1';
+}
+    $('#ico_onlineqq').bind('click',function()
+    {
+        try{
+            var _host=window.location.host;
+            var _pathname=window.location.pathname;
+            var _label = _host+_pathname;
+            _hmt.push(['_trackEvent','QQservice','click',_label,_identity]);
+        } catch(e){}
+    });
+</script>
+<!-- WPA Button Begin -->
+<script charset="utf-8" type="text/javascript" src="js/wpa.js"></script>
+<!-- WPA Button END --><!-- footer S -------------------------------------------------------------------->
+<script src="js/feedback_util.js"></script>
+
+<div id="footer">
+	<div class="foot_bgline">
+		<span title="客服电话" class="tel">客服电话：010-85801860&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总机电话：010-85807900-0&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:zhaopin.umiwi@youmi.cn"  target="_self">投送简历：zhaopin.umiwi@youmi.cn</a></span>
+	</div>
+	<p>
+		<a href="http://v.youmi.cn/coin/?click=1075" title="积分商城" target="_blank" class="">积分商城</a>|
+		<a href="http://ka.youmi.cn/?click=1076" title="开通会员卡" target="_blank" class="">开通会员卡</a>|
+		<a href="http://www.youmi.cn/zhaoshang/" title="代理招商" target="_blank" class="">代理招商</a>|
+		<a href="http://m.youmi.cn/?click=1074" title="客户端" target="_blank" class="">客户端</a>|
+		<a href="http://v.youmi.cn/member/diamond?click=1077" title="钻石会员" target="_blank" class="help">钻石会员</a>
+	</p>
+	<p><!--<a href="http://i3.umivi.net/u/help/images/wenhua.jpg" title="网络文化经营许可" target="_blank">-->京网文[2014]0068-0018号<!--</a>-->&nbsp;&nbsp;<a href="http://i3.umivi.net/u/help/images/xukezheng.jpg" title="视听许可证号" target="_blank">视听许可证号0110567</a>&nbsp;&nbsp;京ICP证090644号&nbsp;&nbsp;&nbsp;&nbsp;京ICP备05039090号-4
+&nbsp;&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502002009"><img src="picture/beian_icon.png" alt="" style="vertical-align: middle;">京公网安备 11010502002009号</a></p>
+	<p>北京优视米网络科技有限公司&nbsp;&nbsp;Umiwi版权所有</p>
+    <p>
+	    <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202012080900018" target="_blank"><img src="picture/footer-1.gif" /></a>
+	    <a href="http://net.china.com.cn/" target="_blank"><img src="picture/footer-2.gif" /></a>
+	    <a href="http://www.bj.cyberpolice.cn/index.jsp" target="_blank"><img src="picture/footer-3.gif" /></a>
+	</p>
+</div><script src="js/online.js"></script>
+<!--活动 开始-->
+
+
+
+
+
+
+
+<!--活动 结束 --><!-- 百度统计 S -------------------------------------------------------------------->
+<script type="text/javascript" src="js/recoplay.js"></script>
+<script type="text/javascript">
+var _hmt = _hmt || [];
+var _identity = '-1';
+_hmt.push(['_setCustomVar', 1, 'member', _identity, 1]);
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F141363f47b28d4741ef5d6139d5f0cf0' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<div style="display: none;">
+	<script src="js/z_stat.js" language="JavaScript"></script>
+</div>
+
+</body>
+</html>

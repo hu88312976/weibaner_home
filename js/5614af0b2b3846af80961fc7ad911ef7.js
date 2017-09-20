@@ -1,0 +1,1 @@
+initPage({"code":"succ","msg":"\u5df2\u7ecf\u8d2d\u4e70\uff0c\u53ef\u4ee5\u89c2\u770b!","position":"00\u520600\u79d2","disprice":0});
