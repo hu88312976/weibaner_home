@@ -8,6 +8,7 @@
 <title>注册</title>
 <link rel="stylesheet" type="text/css" href="css/public20150101.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="css/login.css" />
+<script type="text/javascript" charset="utf-8"  src="js/apiServer.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.md5.js"></script>
 </head>
@@ -133,7 +134,7 @@ $(function(){
         var pwd = $('#reg_password').val();
         $.ajax({
             type:'POST',
-            url:'http://39.108.4.136/api/addStudent',
+            url:apiServieURL + '/addStudent',
             data:{account:account,pwd:pwd},
             dataType:'json',
             headers: {

@@ -6,6 +6,7 @@
 <title>登录</title>
 <link rel="stylesheet" type="text/css" href="css/public20150101_1.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="css/login_1.css" />
+<script type="text/javascript" charset="utf-8"  src="js/apiServer.js"></script>
 </head>
 <body  onkeydown="if(event.keyCode==13)totalLogin.login()">
 
@@ -120,7 +121,7 @@ $('#slides').slides({
 	        var password = $('#password').val();
 	        $.ajax({
 	            type:'GET',
-	            url:'http://39.108.4.136/api/LoginStu',
+	            url:apiServieURL + '/LoginStu',
 	            data:{account:username,pwd:password},
 	            dataType:'json',
 	            headers: {
