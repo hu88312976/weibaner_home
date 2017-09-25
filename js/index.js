@@ -14,7 +14,7 @@ $(function(){
 	}
 	$.ajax({
 	    type:'GET',
-	    url:'http://39.108.4.136/api/getAdList',
+	    url:apiServieURL + '/getAdList',
 	    data:'',
 	    dataType:'json',
 	    headers: {
@@ -54,7 +54,7 @@ $(function(){
 	});
 	$.ajax({
 	    type:'GET',
-	    url:'http://39.108.4.136/api/getCourseList',
+	    url:apiServieURL + '/getCourseList',
 	    data:{is_heat:1,page_size:4},
 	    dataType:'json',
 	    headers: {
@@ -67,7 +67,7 @@ $(function(){
 	        	$.each(data.data.data,function(i,n){
 	        		$.ajax({
 					    type:'GET',
-					    url:'http://39.108.4.136/api/getCourseDetail',
+					    url:apiServieURL + '/getCourseDetail',
 					    data:{course_id:n.id},
 					    dataType:'json',
 					    headers: {

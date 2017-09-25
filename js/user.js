@@ -7,7 +7,7 @@ $(function(){
     	$(".name").text(users.name);
     	$.ajax({
     		type:'GET',
-		    url:'http://39.108.4.136/api/getFavoritesList',
+		    url:apiServieURL + '/getFavoritesList',
 		    data:{stu_id:userId},
 		    dataType:'json',
 		    headers: {
@@ -19,7 +19,7 @@ $(function(){
 		    		$.each(data.data.data,function(i,n){
 		    			$.ajax({
 						    type:'GET',
-						    url:'http://39.108.4.136/api/getCourseDetail',
+						    url:apiServieURL + '/getCourseDetail',
 						    data:{course_id:n.course_id},
 						    dataType:'json',
 						    headers: {

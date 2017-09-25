@@ -22,7 +22,7 @@ $(function(){
    	}
    $.ajax({
 	    type:'GET',
-	    url:'http://39.108.4.136/api/getCourseDetail',
+	    url:apiServieURL + '/getCourseDetail',
 	    data:{course_id:id},
 	    dataType:'json',
 	    headers: {
@@ -98,7 +98,7 @@ $(function(){
 	})
    $.ajax({
    		type:'GET',
-	    url:'http://39.108.4.136/api/getCommentList',
+	    url:apiServieURL + '/getCommentList',
 	    data:{course_id:id},
 	    dataType:'json',
 	    headers: {
@@ -140,7 +140,7 @@ $(function(){
    // 收藏状态
    $.ajax({
 		type:'GET',
-	    url:'http://39.108.4.136/api/getFavoritesList',
+	    url:apiServieURL + '/getFavoritesList',
 	    data:{stu_id:userId,course_id:id},
 	    dataType:'json',
 	    headers: {
@@ -169,7 +169,7 @@ $(function(){
 			var remark = $('#remark').val();
 			$.ajax({
 				type:'POST',
-			    url:'http://39.108.4.136/api/addOrder',
+			    url:apiServieURL + 'addOrder',
 			    data:{stu_id:userId,course_id:id,buy_num:buy_num,amount:amount,price:price,pay_type:pay_type,remark:remark},
 			    dataType:'json',
 			    headers: {
@@ -196,7 +196,7 @@ function collection(){
 	var userId = users.id;
 	$.ajax({
 		type:'POST',
-	    url:'http://39.108.4.136/api/FavoritesCourse',
+	    url:apiServieURL + '/FavoritesCourse',
 	    data:{stu_id:userId,course_id:id},
 	    dataType:'json',
 	    headers: {
@@ -222,7 +222,7 @@ function praise(){
    	var stu_id = users.id;
 	$.ajax({
 		type:'POST',
-	    url:'http://39.108.4.136/api/CommentUp',
+	    url:apiServieURL + '/CommentUp',
 	    data:{course_id:id,stu_id:stu_id},
 	    dataType:'json',
 	    headers: {

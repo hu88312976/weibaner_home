@@ -15,7 +15,7 @@ $(function(){
 	seachList();
 	$.ajax({
 	    type:'GET',
-	    url:'http://39.108.4.136/api/getIndustryList',
+	    url:apiServieURL + '/getIndustryList',
 	    data:'',
 	    dataType:'json',
 	    headers: {
@@ -33,7 +33,7 @@ $(function(){
 	});
 	$.ajax({
 	    type:'GET',
-	    url:'http://39.108.4.136/api/getCourseList',
+	    url:apiServieURL + '/getCourseList',
 	    data:{page_size:7,is_heat:1},
 	    dataType:'json',
 	    headers: {
@@ -59,7 +59,7 @@ $(function(){
 function seachList(page,course_type,order_by,is_heat,industry_id){
 	$.ajax({
 	    type:'GET',
-	    url:'http://39.108.4.136/api/getCourseList',
+	    url:apiServieURL + '/getCourseList',
 	    data:{page_size:8,order_by_type:1,page:page,course_type:course_type,order_by:order_by,is_heat:is_heat,industry_id:industry_id},
 	    dataType:'json',
 	    headers: {
