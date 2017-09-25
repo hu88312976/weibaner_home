@@ -31,7 +31,7 @@ $(function(){
 		    							console.log(k)
 						    			html = '<li>'+
 								                '<a href="/curriculumDetail.html?id='+ n.course_id +'" class="img" title="'+ n.course_name +'" target="_blank">'+
-								                    '<img src="http://39.108.4.136/storage/upload/'+ n.image +'" alt="">'+
+								                    '<img src="'+ imgServieURL + n.image +'" alt="">'+
 								                    '<h3>'+ n.course_name +'</h3>'+
 								                '</a>'+
 								                '<p>讲师：<strong class="name"><a title="'+ k.teacher_name +'" href="/mayunxuanchuanpian.shtml?go=1" target="_blank">'+ k.teacher_name +'</a></strong> <i class="ico_picnew"></i></p>'+

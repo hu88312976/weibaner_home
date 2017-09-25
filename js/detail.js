@@ -34,7 +34,7 @@ $(function(){
 					$('.crumbs strong').text(n.course_name);
 					$('.albuminfo').append('<div class="w_950">'+
 				            '<div class="video_vdo">'+
-				            	'<img src="http://39.108.4.136/storage/upload/'+ n.image +'" tagName="IMG" width="400" height="300"/>'+
+				            	'<img src="'+ imgServieURL + n.image +'" tagName="IMG" width="400" height="300"/>'+
 				            '</div>'+
 				            '<div class="video_info">'+
 				                '<h1>'+ n.course_name +'<span>'+
@@ -75,7 +75,7 @@ $(function(){
 				            '</div>'+
 				        '</div>');
 					$('.tcherinfo').append('<a class="img_l" target="_blank" href="">'+
-										'<img src="http://39.108.4.136/storage/upload/'+ n.image +'"/>'+
+										'<img src="'+ imgServieURL + n.image +'"/>'+
 									'</a>'+
 									'<h3>'+ n.teacher_name +'</h3>'+
 									'<p class="gray9">'+ n.title +'</p>'+

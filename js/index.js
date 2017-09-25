@@ -26,7 +26,7 @@ $(function(){
 	        	var html1 = '';
 	        	$.each(data.data,function(i,n){
 	        		html = '<div class="hotpic">'+
-                '<a href="">'+'<img src="http://39.108.4.136/storage/upload/'+ n.image +'"></a>'+
+                '<a href="">'+'<img src="'+ imgServieURL + n.image +'"></a>'+
             	'</div>';
             		html1 = '<li>'+
                             '<a href="'+ n.link_address +'" target="_blank"><i class="icon-video"></i>'+
@@ -81,7 +81,7 @@ $(function(){
 									'<dd>'+ k.start_time +"至"+ k.end_time +'<span></span>'+
 			       						'<a id="tutor_25" name="tutorisbuy" tutoruid="25" class="read unread" href="/curriculumDetail.html?id='+ n.id +'">'+'查看'+'</a></dd>';
 			       					html = '<li>'+
-					                '<a href="/curriculumDetail.html?id='+ n.id +'"><img src="http://39.108.4.136/storage/upload/'+ n.image +'" alt=""></a>'+
+					                '<a href="/curriculumDetail.html?id='+ n.id +'"><img src="'+ imgServieURL + n.image +'" alt=""></a>'+
 								        '<dl>'+
 								        '<dt><a href="/curriculumDetail.html?id='+ n.id +'">'+ n.name +'</a></dt>'+ html1 +
 								 	'</dl>'+

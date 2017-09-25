@@ -44,7 +44,7 @@ $(function(){
 	    		var html = '';
 	    		$.each(data.data.data,function(i,n){
 	    			html = '<li>'+
-							'<a href="/curriculumDetail.html?id='+ n.id +'"><img style="" src="http://39.108.4.136/storage/upload/'+ n.image +'"></a>'+
+							'<a href="/curriculumDetail.html?id='+ n.id +'"><img style="" src="'+ imgServieURL + n.image +'"></a>'+
 							'<div>'+
 								'<a href="" title=""><h2>'+ n.name +'</h2></a>'+
 								'<p><span>'+ n.click_number +'</span>点击过</p>'+
@@ -71,7 +71,7 @@ function seachList(page,course_type,order_by,is_heat,industry_id){
 	    		$.each(data.data.data,function(i,n){
 	    			html =html +'<li>'+
 							'<dl>'+
-								'<dt><a href="/curriculumDetail.html?id='+ n.id +'"><img src="http://39.108.4.136/storage/upload/'+ n.image +'"></a></dt>'+
+								'<dt><a href="/curriculumDetail.html?id='+ n.id +'"><img src="'+ imgServieURL + n.image +'"></a></dt>'+
 								'<dd>'+
 									'<h2><a href="">'+ n.name +'</a></h2>'+
 								'</dd>'+
